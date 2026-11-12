@@ -1,7 +1,7 @@
 import http from 'node:http';
 import {readFile} from 'node:fs/promises';
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
+import {fileURLToPath, pathToFileURL} from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
 try {
   const env = await readFile(path.join(root,'.env.local'),'utf8');
@@ -11,8 +11,7 @@ try {
     if (match) process.env[match[1]] = match[2].replace(/^(['"])(.*)\1$/, '$2');
   }
 } catch(error) { if(error.code !== 'ENOENT') throw error; }
-const code = await readFile(path.join(root,'api/extract.js'),'utf8');
-const {default:extract} = await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
+const {default:extract} = await import(pathToFileURL(path.join(root,'api/extract.js')).href);
 const publicFiles = new Set(['index.html','app.js','styles.css','pink-form-original.html','pink-form-dynamic.html','samples/SampleA1815.pdf','samples/SampleL16.pdf','samples/SampleM28.pdf']);
 const types = {'.html':'text/html','.js':'text/javascript','.css':'text/css','.pdf':'application/pdf'};
 http.createServer(async(req,res)=>{

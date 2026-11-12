@@ -954,7 +954,7 @@ document.getElementById('extractAi').onclick = async () => {
     extraction = result;
     document.getElementById('aiJson').textContent = JSON.stringify(result,null,2);
     document.getElementById('aiCsv').disabled = document.getElementById('aiEdit').disabled = false;
-    aiStatus.textContent = result.source === 'sample' ? 'Saved sample results loaded; no OpenAI request was made. Review before saving.' : 'Live GPT extraction ready. Review the transcription before saving.';
+    aiStatus.textContent = result.source === 'sample' ? (result.accessStatus === 'unconfigured' ? 'Live GPT is not configured: set OPENAI_ACCESS_CODE in Vercel and redeploy. ' : result.accessStatus === 'incorrect' ? 'Access code did not match. ' : '') + 'Saved sample results loaded; no OpenAI request was made. Review before saving.' : 'Live GPT extraction ready. Review the transcription before saving.';
   } catch(error) { aiStatus.textContent = error.message; }
   finally { button.disabled = false; }
 };

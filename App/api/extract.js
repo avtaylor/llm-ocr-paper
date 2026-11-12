@@ -1,7 +1,10 @@
 import {readFile} from 'node:fs/promises';
-import path from 'node:path';
 import {createHash, timingSafeEqual} from 'node:crypto';
-const samples = new Set(['SampleA1815.pdf', 'SampleL16.pdf', 'SampleM28.pdf']);
+const sampleFiles = new Map([
+  ['SampleA1815.pdf', new URL('../samples/SampleA1815.json', import.meta.url)],
+  ['SampleL16.pdf', new URL('../samples/SampleL16.json', import.meta.url)],
+  ['SampleM28.pdf', new URL('../samples/SampleM28.json', import.meta.url)],
+]);
 export const config = { maxDuration: 120 };
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
@@ -12,12 +15,15 @@ export default async function handler(req, res) {
     const hash = value => createHash('sha256').update(value).digest();
     const authorized = typeof expected === 'string' && expected.length > 0 && typeof accessCode === 'string' && timingSafeEqual(hash(accessCode), hash(expected));
     if (!authorized) {
-      if (!samples.has(sample)) return res.status(403).json({error:'A valid access code is required for uploaded PDFs. Choose a bundled sample to use saved results.'});
+      if (!sampleFiles.has(sample)) return res.status(403).json({error:'A valid access code is required for uploaded PDFs. Choose a bundled sample to use saved results.'});
       try {
-        const data = JSON.parse(await readFile(path.join(process.cwd(), 'samples', sample.replace(/\.pdf$/, '.json')), 'utf8'));
+        const data = JSON.parse(await readFile(sampleFiles.get(sample), 'utf8'));
         if (!data.header || !Array.isArray(data.visits)) throw new Error('Invalid sample');
-        return res.status(200).json({...data, source:'sample'});
-      } catch { return res.status(503).json({error:'Saved results for this sample are unavailable.'}); }
+        return res.status(200).json({...data, source:'sample', accessStatus: !expected ? 'unconfigured' : accessCode ? 'incorrect' : 'missing'});
+      } catch (error) {
+        console.error('Saved sample load failed', {sample, code:error.code || error.name});
+        return res.status(503).json({error:error.code === 'ENOENT' ? 'Saved sample JSON is missing from the deployment. Check Root Directory is App and redeploy.' : 'Saved sample JSON could not be read or is invalid.'});
+      }
     }
     if (!process.env.OPENAI_API_KEY) return res.status(503).json({error:'Configure OPENAI_API_KEY in Vercel.'});
     if (!['gpt-4.1-mini','latest'].includes(choice)) return res.status(400).json({error:'Unsupported model selection.'});
