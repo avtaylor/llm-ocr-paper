@@ -1,0 +1,115 @@
+{
+  "matches": [
+    {
+      "left_domain": "H1",
+      "left_card_id": "F2_H1_0027",
+      "right_domain": "H2",
+      "right_card_id": "F2_H2_0032",
+      "facility_code": "F2"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F6_H1_0004",
+      "right_domain": "H2",
+      "right_card_id": "F6_H2_0010",
+      "facility_code": "F6"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F7_H1_0006",
+      "right_domain": "H2",
+      "right_card_id": "F7_H2_0023",
+      "facility_code": "F7"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F7_H1_0007",
+      "right_domain": "H2",
+      "right_card_id": "F7_H2_0021",
+      "facility_code": "F7"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F7_H1_0015",
+      "right_domain": "H2",
+      "right_card_id": "F7_H2_0019",
+      "facility_code": "F7"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F7_H1_0016",
+      "right_domain": "H2",
+      "right_card_id": "F7_H2_0012",
+      "facility_code": "F7"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F7_H1_0017",
+      "right_domain": "H2",
+      "right_card_id": "F7_H2_0013",
+      "facility_code": "F7"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F16_H1_0018",
+      "right_domain": "H2",
+      "right_card_id": "F16_H2_0018",
+      "facility_code": "F16"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F16_H1_0019",
+      "right_domain": "H2",
+      "right_card_id": "F16_H2_0019",
+      "facility_code": "F16"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F16_H1_0033",
+      "right_domain": "H2",
+      "right_card_id": "F16_H2_0032",
+      "facility_code": "F16"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F7_H1_0006",
+      "right_domain": "OCR",
+      "right_card_id": "F7_OCR_0010",
+      "facility_code": "F7"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F16_H1_0018",
+      "right_domain": "OCR",
+      "right_card_id": "F16_OCR_0024",
+      "facility_code": "F16"
+    },
+    {
+      "left_domain": "H1",
+      "left_card_id": "F16_H1_0019",
+      "right_domain": "OCR",
+      "right_card_id": "F16_OCR_0004",
+      "facility_code": "F16"
+    }
+  ],
+  "exclusions": [
+    {
+      "domain": "H1",
+      "facility_code": "F7",
+      "source_card_id": "F7_H1_0025",
+      "reason": "user_confirmed_duplicate"
+    },
+    {
+      "domain": "H1",
+      "facility_code": "F6",
+      "source_card_id": "F6_H1_0025",
+      "reason": "user_confirmed_absent_from_other_entry"
+    },
+    {
+      "domain": "OCR",
+      "facility_code": "F16",
+      "source_card_id": "F16_OCR_0034",
+      "reason": "user_confirmed_duplicate"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+﻿unique_child_id,hcc_reg_no,transfer_in_date,birth_cohort_month,birth_cohort_year,child_name,guardian_name,physical_address,sex,child_age,agrees_to_fup,guardian_relation,guardian_phone,mother_status_enrolment,art_reg_no,art_start_date,age_at_enrolment,nvp_start_date,nvp_duration,hiv_test_0_sample_date,hiv_test_0_type,hiv_test_0_sample_id,hiv_test_0_result,hiv_test_0_date_received,hiv_test_1_sample_date,hiv_test_1_type,hiv_test_1_sample_id,hiv_test_1_result,hiv_test_1_date_received,hiv_test_2_sample_date,hiv_test_2_type,hiv_test_2_sample_id,hiv_test_2_result,hiv_test_2_date_received,birth_date,birth_weight_kg,age_months,visit_date,height_cm,weight_kg,muac_cm,wasting_malnutrition,breastfeeding,stopped_lt6m,stopped_ge6m,mother_status,abdominal_exam,hiv_testing,hiv_infection,cpt,follow_up,next_appointment_date,folder_name,pdf_file_name,district_code,facility_code,source_card_id
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,1,5/2/24,,5.5,,No,Exc,0,0,onART,NAD,DBS,C,30,Con,5/3/24,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,2,5/3/24,,6.5,,No,Exc,0,0,onART,NAD,DBS,C,60,Con,5/4/24,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,3,5/4/24,,7.2,,No,Exc,0,0,onART,NAD,DBS,C,60,Con,3/5/24,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,4,3/5/24,,8.2,,No,Exc,0,0,onART,NAD,DBS,C,6,Con,4/6/24,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,5,3/6/24,,8.3,,No,Exc,0,0,onART,NAD,DBS,C,60,Con,3/7/24,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,6,3/7/24,,9.1,,No,Exc,0,0,onART,NAD,DBS,C,180,Con,3/10/24,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,9,7/10/24,,9,,No,Exc,0,0,onART,NAD,DBS,C,120,Con,23/12/24,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,12,23/12/24,,10.5,,No,Exc,0,0,onART,NAD,DBS,A,180,Con,19/3/25,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,15,19/3/25,,10.9,,No,Exc,0,0,onART,NAD,DBS,B,180,Con,6/6/25,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,18,11/06/25,,11.9,,No,Exc,0,0,onART,NAD,DBS,A,180,Con,08/09/25,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,21,15/9/25,,12.0,,No,Exc,0,0,onART,NAD,DBS,C,180,Con,22/12/25,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
+,31521,,Dec,2023,miracle mphepo,Charlotte Banda,"Po age zim michael
+Kanyata bean lungu hospital @Longwe",F,,N,mother,0980818673,onART,mpc ARV 20550,,600KS,,6 months,5/2/24,DBS,31521,Pos,5/2/24,23/12/24,DBS,31521,Neg,,,,,,,21/12/23,2.8,24,23/12/25,,12.5,,No,Exc,0,0,onART,NAD,DBS,A,,Dis,,F3,HCC_31521__F3_OCR_0015.pdf,D1,F3,F3_OCR_0015
