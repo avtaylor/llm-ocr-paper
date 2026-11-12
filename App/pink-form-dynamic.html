@@ -1,0 +1,1779 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pink Card Version 2 – Page 1 (HTML Template)</title>
+  <style>
+    :root{
+      --ink:#111;
+      --line:#222;
+      --bg:#fff;
+      --muted:#666;
+      --fs:12px;
+      --fs-xs:10px;
+      --pressed:#111;
+      --pressedText:#fff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      padding:24px;
+      background:#f3f3f3;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--ink);
+    }
+    .page{
+      width:1100px;
+      max-width:100%;
+      margin:0 auto;
+      background:var(--bg);
+      border:2px solid var(--line);
+      padding:12px;
+    }
+    .tiny{font-size:var(--fs-xs); color:var(--muted)}
+    .label{font-size:var(--fs-xs); font-weight:600; text-transform:uppercase; letter-spacing:.02em}
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+      font-size:var(--fs);
+    }
+    .field input[type="text"],
+    .field input[type="date"],
+    .field input[type="number"],
+    .field select{
+      height:26px;
+      border:1px solid var(--line);
+      padding:2px 6px;
+      font-size:var(--fs);
+      background:#fff;
+    }
+    .box{
+      border:1.5px solid var(--line);
+      padding:8px;
+      background:#fff;
+    }
+    .box-title{
+      font-weight:700;
+      text-align:center;
+      font-size:13px;
+      margin-bottom:6px;
+      letter-spacing:.02em;
+    }
+    .row{display:flex; gap:10px}
+    .grow{flex:1}
+    .topbar{
+      display:grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+      gap:10px;
+      align-items:start;
+    }
+    .brand{
+      border:1.5px solid var(--line);
+      padding:8px;
+      min-height:78px;
+    }
+    .brand .title{font-weight:800;font-size:14px;line-height:1.1}
+    .brand .subtitle{font-size:12px;font-weight:700;margin-top:2px}
+    .brand .warn{margin-top:4px;font-size:11px;font-weight:700}
+
+    .barcode{
+      border:1.5px solid var(--line);
+      padding:8px;
+      min-height:78px;
+      display:grid;
+      gap:6px;
+    }
+    .code-input{
+      height:30px;
+      border:1px dashed var(--line);
+      padding:2px 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing:.18em;
+      font-weight:700;
+      font-size:12px;
+      text-transform:uppercase;
+    }
+    .child-box{
+    max-width:280px;
+   }
+   .mid{
+      margin-top:10px;
+      display:grid;
+      grid-template-columns: 0.90fr .70fr 1.40fr;
+      gap:5px;
+      align-items:start;
+    } 
+    .child-guardian{
+      display:grid;
+      grid-template-columns: 1fr 100px;
+      gap:10px;
+      align-items:start;
+    } 
+    .sex-box{
+      border:1.5px solid var(--line);
+      padding:8px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      min-height:150px;
+    }
+    .agrees{
+      display:grid;
+      grid-template-columns: 150px 1fr 1fr;
+      gap:10px;
+      margin-top:8px;
+      align-items:end;
+    }
+
+    /* Pressable option buttons */
+    .optbar{
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      align-items:center;
+      justify-content:center;
+    }
+    .optbtn{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111;
+      font-size:10px;
+      padding:4px 8px;
+      border-radius:4px;
+      cursor:pointer;
+      user-select:none;
+      line-height:1;
+      min-height:22px;
+      min-width: 34px;
+    }
+    .optbtn[aria-pressed="true"]{
+      background:var(--pressed);
+      color:var(--pressedText);
+    }
+    .optbtn:focus{
+      outline:2px solid #5b9dd9;
+      outline-offset:2px;
+    }
+
+    .hiv-tests table{width:100%;border-collapse:collapse;font-size:11px}
+    .hiv-tests th,.hiv-tests td{border:1px solid var(--line);padding:4px;vertical-align:top}
+    .hiv-tests th{font-weight:800;text-align:center}
+    .hiv-tests input,.hiv-tests select{width:100%;height:24px;border:1px solid var(--line);font-size:11px}
+
+    .visits{margin-top:10px}
+    table.grid{width:100%;border-collapse:collapse;font-size:11px}
+    table.grid th, table.grid td{border:1px solid var(--line);padding:4px;vertical-align:middle;text-align:center}
+    table.grid th{font-weight:800;background:#fafafa}
+    .vhead{font-size:10px;line-height:1.1}
+    .subhead{font-size:10px;font-weight:700;background:#fff}
+    .cell-input{
+      width:100%;
+      min-width:44px;
+      border:0;
+      border-bottom:1px dotted #444;
+      background:transparent;
+      font-size:11px;
+      text-align:center;
+      padding:2px;
+      outline:none;
+    }
+    .leftcol{text-align:left;padding-left:6px;font-weight:700;font-size:11px;background:#fff}
+    .note{margin-top:8px;font-size:11px;color:var(--muted)}
+
+    /* Submit/import area */
+    .submit-wrap{
+      margin-top:12px;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:flex-end;
+      flex-wrap:wrap;
+    }
+    .btn{
+      border:1.5px solid var(--line);
+      background:#fff;
+      padding:10px 14px;
+      font-weight:800;
+      cursor:pointer;
+      border-radius:6px;
+    }
+    .btn:active{transform:translateY(1px)}
+    .status{
+      font-size:11px;
+      color:var(--muted);
+      margin-right:auto;
+      min-width:260px;
+    }
+    .file{
+      border:1.5px dashed var(--line);
+      padding:8px 10px;
+      border-radius:6px;
+      background:#fff;
+      font-size:11px;
+    }
+
+    @media print{
+      body{background:#fff;padding:0}
+      .page{border:0;width:auto}
+      .submit-wrap{display:none}
+    }
+
+    /*microphone settings */
+
+    .input-mic-wrapper{
+    position:relative;
+    width:100%;
+    }
+
+    .input-with-mic{
+    width:100%;
+    padding-right:32px;   /* space for mic */
+    }
+
+    .mic-inside{
+    right:4px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-size:14px;
+    width:24px;
+    height:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    }
+
+    .mic-inside:hover{
+    background:#eee;
+    border-radius:4px;
+    }
+
+    .input-mic-left{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.mic-left{
+  width:26px;
+  height:26px;
+  border:1px solid #aaa;
+  background:#fff;
+  cursor:pointer;
+  font-size:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.mic-left:hover{
+  background:#eee;
+}
+
+
+    /* auto dictation controls */
+    .dictation-wrap{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      width:100%;
+    }
+
+    .dictation-wrap .dictation-field{
+      flex:1;
+      min-width:0;
+    }
+
+    .dictation-btn{
+      width:26px;
+      height:26px;
+      border:1px solid #aaa;
+      background:#fff;
+      cursor:pointer;
+      font-size:14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex:0 0 26px;
+      border-radius:4px;
+      line-height:1;
+    }
+
+    .dictation-btn:hover{
+      background:#eee;
+    }
+
+    .dictation-btn.is-listening{
+      background:#111;
+      color:#fff;
+      border-color:#111;
+    }
+
+
+    .global-dictation-bar{
+      position:sticky;
+      top:8px;
+      z-index:1000;
+      display:flex;
+      justify-content:flex-end;
+      margin-bottom:10px;
+    }
+
+    .global-dictation-btn{
+      border:1.5px solid var(--line);
+      background:#fff;
+      padding:8px 12px;
+      font-weight:700;
+      cursor:pointer;
+      border-radius:8px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .global-dictation-btn.is-listening{
+      background:#111;
+      color:#fff;
+      border-color:#111;
+    }
+
+    .global-dictation-hint{
+      font-size:11px;
+      color:var(--muted);
+      margin-right:10px;
+      align-self:center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <form id="pinkCardForm">
+
+      <div class="global-dictation-bar">
+        <div class="global-dictation-hint" id="globalDictationHint">Turn on dictation once, then click any editable text, date, or number field and speak.</div>
+        <button class="global-dictation-btn" type="button" id="globalDictationBtn" aria-pressed="false">🎤 Enable document dictation</button>
+      </div>
+      
+      <!-- TOP HEADER ROW -->
+      <div class="topbar">
+        <div class ="box">
+          <div class="brand">
+          <div class="title">Exposed Child Under 24 Months</div>
+          <div class="subtitle">Pink Card Version 2</div>
+          <div class="warn">@AmeliaTaylor Kuyesera AI LAB</div>
+        </div>
+        <br/>
+        <label class="file">
+            Import Patient (CSV file)
+            <input type="file" id="importCsv" accept=".csv,text/csv" style="display:none"/>
+        </label> 
+         <br/> <br/>
+         <button class="btn" type="button" id="clearBtn1" onclick="clearForm()">Clear Form </button>  
+         <br/>
+        </div>
+        <div class="barcode">
+          <div class="label">Unique Child ID</div>
+          <input class="code-input" id="uniqueChildId" name="unique_child_id" type="text" placeholder="E.g. F9D-AX7" />
+          <div class="tiny">Editable</div>
+        </div>
+
+        <div class="field box">
+          <div class="label">HCC Reg No</div>
+          <input type="text" id="hccRegNo" name="hcc_reg_no" placeholder="e.g. 2251" />
+        </div>
+
+        <div class="field box">
+          <div class="label">Transfer In Date</div>
+          <input type="date" id="transferInDate" name="transfer_in_date" />
+        </div>
+
+        <div class="box">
+          <div class="label">Birth Cohort</div>
+          <div class="row" style="gap:8px;margin-top:6px">
+            <div class="field grow">
+              <div class="tiny">Month</div>
+              <select id="birthCohortMonth" name="birth_cohort_month">
+                <option value=""></option>
+                <option>January</option><option>February</option><option>March</option>
+                <option>April</option><option>May</option><option>June</option>
+                <option>July</option><option>August</option><option>September</option>
+                <option>October</option><option>November</option><option>December</option>
+              </select>
+            </div>
+            <div class="field" style="width:110px">
+              <div class="tiny">Year</div>
+              <input type="number" id="birthCohortYear" name="birth_cohort_year" min="2000" max="2100" placeholder="2021" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MID ROW -->
+      <div class="mid">
+
+        <!-- Child & Guardian -->
+        <div class="child-box">
+          <div class="box-title">Child and Guardian Details</div>
+
+          <div class="child-guardian">
+            <div class="grow">
+              <div class="field" style="margin-bottom:8px">
+                <div class="label">Child Name</div>
+                <input type="text" id="childName" name="child_name"
+                        placeholder="(redacted / backed out)"
+                        disabled
+                        style="width:180px; background:#f5f5f5;">
+                </div>
+
+              <div class="field" style="margin-bottom:8px">
+                <div class="label">Guardian Name</div>
+                <input type="text" id="guardianName" name="guardian_name" placeholder="(redacted / backed out)" disabled
+                        style="width:180px; background:#f5f5f5;" />
+              </div>
+
+              <div class="field">
+                <div class="label">Physical Address</div>
+                <input type="text" id="physicalAddress" name="physical_address" placeholder="Village / TA / District" disabled
+                        style="width:180px; background:#f5f5f5;"/>
+              </div>
+            </div>
+
+            <div class="sex-box">
+              <div class="label" style="text-align:center">Sex</div>
+              <div class="optbar" data-toggle-group data-name="sex">
+                <button class="optbtn" type="button" data-value="M">M</button>
+                <button class="optbtn" type="button" data-value="F">F</button>
+              </div>
+
+              <div class="field">
+                <div class="label">Child Age (optional)</div>
+                <input type="text" id="childAge" name="child_age" placeholder="e.g. 6 wks" />
+              </div>
+            </div>
+          </div>
+
+          <div class="agrees">
+            <div class="field">
+              <div class="label">Agrees to FUP</div>
+              <div class="optbar" data-toggle-group data-name="agree_fup">
+                <button class="optbtn" type="button" data-value="N">N</button>
+                <button class="optbtn" type="button" data-value="Y">Y</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="label">Guardian Relation</div>
+              <input type="text" id="guardianRelation" name="guardian_relation" placeholder="e.g. Mother" style="width:110px; background:#f5f5f5;" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Status at Enrolment -->
+        <div class="box">
+          <div class="box-title">Status at Enrolment</div>
+
+          <div class="field" style="margin-bottom:8px">
+            <div class="label">Mother Status</div>
+            <div class="optbar" data-toggle-group data-name="mother_status_enrol">
+              <button class="optbtn" type="button" data-value="Alive_NoART">Alive No ART</button>
+              <button class="optbtn" type="button" data-value="Alive_OnART">Alive On ART</button>
+              <button class="optbtn" type="button" data-value="Died">Died</button>
+              <button class="optbtn" type="button" data-value="Unk">Unk</button>
+            </div>
+          </div>
+
+          <div class="field" style="margin-bottom:8px">
+            <div class="label">ART Reg No</div>
+            <input type="text" id="artRegNo" name="art_reg_no" />
+          </div>
+
+          <div class="field" style="margin-bottom:8px">
+            <div class="label">ART Start Date</div>
+            <input type="date" id="artStartDate" name="art_start_date" />
+          </div>
+
+          <div class="field" style="margin-bottom:8px">
+            <div class="label">Age at Enrolment</div>
+            <input type="text" id="ageAtEnrol" name="age_at_enrolment" placeholder="e.g. 6 wks" />
+          </div>
+
+          <div class="field" style="margin-bottom:8px">
+            <div class="label">When starting NVP</div>
+            <input type="date" id="nvpStart" name="nvp_start_date" />
+          </div>
+
+          <div class="field">
+            <div class="label">NVP duration</div>
+            <input type="text" id="nvpDuration" name="nvp_duration" placeholder="e.g. 6 wks" />
+          </div>
+
+          <div class="tiny" style="margin-top:6px">⇦ Update later</div>
+        </div>
+
+        <!-- HIV Testing -->
+        <div class="box hiv-tests">
+          <div class="box-title">HIV Testing</div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Sample Date</th>
+                <th>Type</th>
+                <th>Sample ID / HTC Serial No.</th>
+                <th>Result</th>
+                <th>Date received from lab</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="date" id="ht0_sd" /></td>
+                <td>
+                  <select id="ht0_type"><option value=""></option><option>DBS</option><option>RT</option></select>
+                </td>
+                <td><input type="text" id="ht0_id" /></td>
+                <td>
+                  <select id="ht0_res"><option value=""></option><option>Neg</option><option>Pos</option><option>Inc</option></select>
+                </td>
+                <td><input type="date" id="ht0_dr" /></td>
+              </tr>
+
+              <tr>
+                <td><input type="date" id="ht1_sd" /></td>
+                <td>
+                  <select id="ht1_type"><option value=""></option><option>DBS</option><option>RT</option></select>
+                </td>
+                <td><input type="text" id="ht1_id" /></td>
+                <td>
+                  <select id="ht1_res"><option value=""></option><option>Neg</option><option>Pos</option><option>Inc</option></select>
+                </td>
+                <td><input type="date" id="ht1_dr" /></td>
+              </tr>
+
+              <tr>
+                <td><input type="date" id="ht2_sd" /></td>
+                <td>
+                  <select id="ht2_type"><option value=""></option><option>DBS</option><option>RT</option></select>
+                </td>
+                <td><input type="text" id="ht2_id" /></td>
+                <td>
+                  <select id="ht2_res"><option value=""></option><option>Neg</option><option>Pos</option><option>Inc</option></select>
+                </td>
+                <td><input type="date" id="ht2_dr" /></td>
+              </tr>
+
+              <tr>
+                <td><input type="date" id="ht3_sd" /></td>
+                <td>
+                  <select id="ht3_type"><option value=""></option><option>DBS</option><option>RT</option></select>
+                </td>
+                <td><input type="text" id="ht3_id" /></td>
+                <td>
+                  <select id="ht3_res"><option value=""></option><option>Neg</option><option>Pos</option><option>Inc</option></select>
+                </td>
+                <td><input type="date" id="ht3_dr" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- VISITS TABLE -->
+      <div class="visits box">
+        <div class="row" style="justify-content:space-between; align-items:flex-end; margin-bottom:6px; gap:12px; flex-wrap:wrap;">
+          <div class="field" style="max-width:260px">
+            <div class="label">Birth Date</div>
+            <input type="date" id="birthDate" />
+          </div>
+          <div class="field" style="max-width:160px">
+            <div class="label">Birth Wgt (kg)</div>
+            <input type="number" id="birthWgt" step="0.1" />
+          </div>
+          <div class="field" style="min-width:220px">
+            <div class="label">Visits</div>
+            <div class="tiny">Add one visit at a time. Enter age in months for each visit row.</div>
+          </div>
+          <div>
+            <button class="btn" type="button" id="addVisitRowBtn">+ Add Visit Row</button>
+          </div>
+        </div>
+
+        <table class="grid">
+          <thead>
+            <tr>
+              <th rowspan="2" style="width:85px">Current<br/>Age in<br/>months</th>
+              <th colspan="4" class="vhead">Anthropometry</th>
+              <th rowspan="2" style="width:130px" class="vhead">Wasting /<br/>Malnutrition</th>
+              <th colspan="3" class="vhead">Breast feeding</th>
+              <th rowspan="2" style="width:165px" class="vhead">Mother Status</th>
+              <th rowspan="2" style="width:110px" class="vhead">Clin. Monit.</th>
+              <th rowspan="2" style="width:150px" class="vhead">HIV testing</th>
+              <th rowspan="2" style="width:150px" class="vhead">HIV infection</th>
+              <th rowspan="2" style="width:80px" class="vhead">CPT</th>
+              <th rowspan="2" style="width:170px" class="vhead">Follow–Up Outcome</th>
+              <th rowspan="2" style="width:140px" class="vhead">Next Appointment</th>
+              <th rowspan="2" style="width:70px" class="vhead">Action</th>
+            </tr>
+            <tr>
+              <th style="width:140px" class="subhead">Visit Date</th>
+              <th style="width:90px" class="subhead">Height</th>
+              <th style="width:90px" class="subhead">Weight</th>
+              <th style="width:80px" class="subhead">MUAC</th>
+
+              <th class="subhead" style="width:120px">Ongoing</th>
+              <th class="subhead" style="width:90px">Stopped &lt;6m</th>
+              <th class="subhead" style="width:90px">Stopped ≥6m</th>
+            </tr>
+          </thead>
+
+          <tbody id="visitsBody"></tbody>
+        </table>
+
+        <div class="note">
+          <!-- Import expects a CSV with columns like: <code>unique_child_id,hcc_reg_no,...,age_months,visit_date,weight_kg,...</code>. -->
+          <!-- Rows are matched by <code>age_months</code>. Only matching fields are filled. -->
+        </div>
+
+        <div class="submit-wrap">
+          <div class="status" id="statusMsg">When ready click submit to export data to csv.</div>
+         <!--  <label class="file">
+            Import CSV
+            <input type="file" id="importCsv" accept=".csv,text/csv" style="display:none" />
+          </label> -->
+
+          <button class="btn" type="button" id="exportBtn">Submit & Export to Excel (CSV)</button>
+           <button class="btn" type="button" id="clearBtn2" onclick="clearForm()">Clear Form </button>  
+        </div>
+        
+      </div>
+
+    </form>
+  </div>
+
+  <script>
+    // -----------------------------
+    // Toggle-button groups (single select)
+    // -----------------------------
+  function initToggleGroups(root=document){
+    const groups = root.querySelectorAll("[data-toggle-group]");
+    groups.forEach(group=>{
+      // prevent double-binding
+      if (group.dataset.bound === "1") return;
+      group.dataset.bound = "1";
+
+      const buttons = group.querySelectorAll(".optbtn");
+      buttons.forEach(btn=>{
+        if (!btn.hasAttribute("aria-pressed")) btn.setAttribute("aria-pressed","false");
+
+        btn.addEventListener("click", ()=>{
+          const isPressed = btn.getAttribute("aria-pressed") === "true";
+          buttons.forEach(b=>b.setAttribute("aria-pressed","false"));
+
+          if(!isPressed){
+            btn.setAttribute("aria-pressed","true");
+            group.dataset.value = btn.dataset.value || btn.textContent.trim();
+          } else {
+            delete group.dataset.value;
+          }
+        });
+      });
+    });
+  }
+
+  // refresh UI from group.dataset.value without rebinding events
+  function refreshToggleUI(root=document){
+    root.querySelectorAll("[data-toggle-group]").forEach(group=>{
+      const v = (group.dataset.value || "").toString().trim().toLowerCase();
+      const buttons = group.querySelectorAll(".optbtn");
+      buttons.forEach(btn=>{
+        const bv = (btn.dataset.value || btn.textContent).toString().trim().toLowerCase();
+        btn.setAttribute("aria-pressed", (v && bv === v) ? "true" : "false");
+      });
+    });
+  }
+
+  function setGroupValue(groupEl, value){
+    if(!groupEl) return;
+    const v = (value ?? "").toString().trim();
+    if(!v){
+      delete groupEl.dataset.value;
+      refreshToggleUI(groupEl);
+      return;
+    }
+    groupEl.dataset.value = v;
+    refreshToggleUI(groupEl);
+  }
+
+  function getGroupValue(groupEl){
+    return groupEl?.dataset?.value || "";
+  }
+    // -----------------------------
+    // Visits table generator (dynamic rows)
+    // -----------------------------
+    const tbody = document.getElementById("visitsBody");
+    let visitRowCounter = 0;
+
+    function makeOptBar(groupName, labels){
+      const div = document.createElement("div");
+      div.className = "optbar";
+      div.setAttribute("data-toggle-group", "");
+      div.dataset.name = groupName;
+
+      labels.forEach(l => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "optbtn";
+        b.dataset.value = l;
+        b.textContent = l;
+        div.appendChild(b);
+      });
+      return div;
+    }
+
+    function makeInput(type = "text", placeholder = ""){
+      const inp = document.createElement("input");
+      inp.className = "cell-input";
+      inp.type = type;
+      inp.placeholder = placeholder;
+      return inp;
+    }
+
+    function addVisitRow(ageMonths = ""){
+      const rowId = visitRowCounter++;
+      const tr = document.createElement("tr");
+      tr.dataset.ageMonths = (ageMonths ?? "").toString().trim();
+
+      const tdAge = document.createElement("td");
+      const ageInput = makeInput("text", "months");
+      ageInput.dataset.field = "age_months";
+      ageInput.value = (ageMonths ?? "").toString();
+      ageInput.addEventListener("input", () => {
+        tr.dataset.ageMonths = ageInput.value.trim();
+      });
+      tdAge.appendChild(ageInput);
+      tr.appendChild(tdAge);
+
+      const tdVD = document.createElement("td");
+      const visitDate = makeInput("text", "dd/mm/yyyy");
+      visitDate.dataset.field = "visit_date";
+      tdVD.appendChild(visitDate);
+      tr.appendChild(tdVD);
+
+      const tdH = document.createElement("td");
+      const height = makeInput("text", "cm");
+      height.dataset.field = "height_cm";
+      tdH.appendChild(height);
+      tr.appendChild(tdH);
+
+      const tdW = document.createElement("td");
+      const weight = makeInput("text", "kg");
+      weight.dataset.field = "weight_kg";
+      tdW.appendChild(weight);
+      tr.appendChild(tdW);
+
+      const tdMUAC = document.createElement("td");
+      const muac = makeInput("text", "cm");
+      muac.dataset.field = "muac_cm";
+      tdMUAC.appendChild(muac);
+      tr.appendChild(tdMUAC);
+
+      const tdWM = document.createElement("td");
+      const wm = makeOptBar(`wm_${rowId}`, ["No", "Mod", "Sev"]);
+      wm.dataset.field = "wasting_malnutrition";
+      tdWM.appendChild(wm);
+      tr.appendChild(tdWM);
+
+      const tdBFO = document.createElement("td");
+      const bf = makeOptBar(`bf_${rowId}`, ["Exc", "M", "C", "N"]);
+      bf.dataset.field = "breastfeeding";
+      tdBFO.appendChild(bf);
+      tr.appendChild(tdBFO);
+
+      const tdStopLt = document.createElement("td");
+      const slt = makeOptBar(`stop_lt6_${rowId}`, ["✓"]);
+      slt.dataset.field = "stopped_lt6m";
+      tdStopLt.appendChild(slt);
+      tr.appendChild(tdStopLt);
+
+      const tdStopGe = document.createElement("td");
+      const sge = makeOptBar(`stop_ge6_${rowId}`, ["✓"]);
+      sge.dataset.field = "stopped_ge6m";
+      tdStopGe.appendChild(sge);
+      tr.appendChild(tdStopGe);
+
+      const tdMS = document.createElement("td");
+      const ms = makeOptBar(`ms_${rowId}`, ["NoART", "OnART", "Died", "Unk"]);
+      ms.dataset.field = "mother_status";
+      tdMS.appendChild(ms);
+      tr.appendChild(tdMS);
+
+      const tdCM = document.createElement("td");
+      const cm = makeOptBar(`cm_${rowId}`, ["NAD", "Sick"]);
+      cm.dataset.field = "abdominal_exam";
+      tdCM.appendChild(cm);
+      tr.appendChild(tdCM);
+
+      const tdHT = document.createElement("td");
+      const ht = makeOptBar(`ht_${rowId}`, ["No", "DBS", "RT"]);
+      ht.dataset.field = "hiv_testing";
+      tdHT.appendChild(ht);
+      tr.appendChild(tdHT);
+
+      const tdHI = document.createElement("td");
+      const hi = makeOptBar(`hi_${rowId}`, ["A", "B", "C", "D"]);
+      hi.dataset.field = "hiv_infection";
+      tdHI.appendChild(hi);
+      tr.appendChild(tdHI);
+
+      const tdCPT = document.createElement("td");
+      const cpt = makeInput("text", "ml/tabs");
+      cpt.dataset.field = "cpt";
+      tdCPT.appendChild(cpt);
+      tr.appendChild(tdCPT);
+
+      const tdFU = document.createElement("td");
+      const fu = makeOptBar(`fu_${rowId}`, ["Con", "Dis", "ART", "To", "Def", "D"]);
+      fu.dataset.field = "follow_up";
+      tdFU.appendChild(fu);
+      tr.appendChild(tdFU);
+
+      const tdNA = document.createElement("td");
+      const na = makeInput("text", "dd/mm/yyyy");
+      na.dataset.field = "next_appointment_date";
+      tdNA.appendChild(na);
+      tr.appendChild(tdNA);
+
+      const tdAction = document.createElement("td");
+      const removeBtn = document.createElement("button");
+      removeBtn.type = "button";
+      removeBtn.className = "btn";
+      removeBtn.textContent = "−";
+      removeBtn.title = "Remove this visit row";
+      removeBtn.addEventListener("click", () => {
+        tr.remove();
+        if (!tbody.querySelector("tr")) {
+          addVisitRow();
+        }
+      });
+      tdAction.appendChild(removeBtn);
+      tr.appendChild(tdAction);
+
+      tbody.appendChild(tr);
+      initToggleGroups(tr);
+      return tr;
+    }
+
+    document.getElementById("addVisitRowBtn").addEventListener("click", () => {
+      addVisitRow();
+    });
+
+    addVisitRow();
+    initToggleGroups(document);
+
+    // -----------------------------
+    // CSV Export (only rows with Visit Date)
+    // -----------------------------
+    function csvEscape(value){
+      const s = (value ?? "").toString();
+      if(/[",\n]/.test(s)){
+        return `"${s.replace(/"/g,'""')}"`;
+      }
+      return s;
+    }
+
+    function downloadText(filename, text){
+      const blob = new Blob([text], {type:"text/csv;charset=utf-8"});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    }
+
+   /*  function collectHeaderData(){
+      return {
+        unique_child_id: document.getElementById("uniqueChildId").value.trim(),
+        hcc_reg_no: document.getElementById("hccRegNo").value.trim(),
+        transfer_in_date: document.getElementById("transferInDate").value,
+        birth_cohort_month: document.getElementById("birthCohortMonth").value,
+        birth_cohort_year: document.getElementById("birthCohortYear").value,
+        birth_date: document.getElementById("birthDate").value,
+        birth_weight_kg: document.getElementById("birthWgt").value
+      };
+    } */
+
+
+function collectHeaderData(){
+  const get = (id) => (document.getElementById(id)?.value ?? "").toString().trim();
+  const getDate = (id) => (document.getElementById(id)?.value ?? "").toString();
+
+  const groupVal = (name) => {
+    const g = document.querySelector(`[data-toggle-group][data-name="${CSS.escape(name)}"]`);
+    return (g?.dataset?.value ?? "").toString().trim();
+  };
+
+  return {
+    // Top header
+    unique_child_id: get("uniqueChildId"),
+    hcc_reg_no: get("hccRegNo"),
+    transfer_in_date: getDate("transferInDate"),
+    birth_cohort_month: (document.getElementById("birthCohortMonth")?.value ?? "").toString(),
+    birth_cohort_year: get("birthCohortYear"),
+
+    // Child & guardian details
+    child_name: get("childName"),
+    guardian_name: get("guardianName"),
+    physical_address: get("physicalAddress"),
+    sex: groupVal("sex"),
+    child_age: get("childAge"),
+    agrees_to_fup: groupVal("agree_fup"),
+    guardian_relation: get("guardianRelation"),
+    guardian_phone: get("guardianPhone"),
+
+    // Status at enrolment
+    mother_status_enrolment: groupVal("mother_status_enrol"),
+    art_reg_no: get("artRegNo"),
+    art_start_date: getDate("artStartDate"),
+    age_at_enrolment: get("ageAtEnrol"),
+    nvp_start_date: getDate("nvpStart"),
+    nvp_duration: get("nvpDuration"),
+
+    // HIV testing rows (3)
+    hiv_test_0_sample_date: getDate("ht0_sd"),
+    hiv_test_0_type: (document.getElementById("ht0_type")?.value ?? "").toString(),
+    hiv_test_0_sample_id: get("ht0_id"),
+    hiv_test_0_result: (document.getElementById("ht0_res")?.value ?? "").toString(),
+    hiv_test_0_date_received: getDate("ht0_dr"),
+
+    hiv_test_1_sample_date: getDate("ht1_sd"),
+    hiv_test_1_type: (document.getElementById("ht1_type")?.value ?? "").toString(),
+    hiv_test_1_sample_id: get("ht1_id"),
+    hiv_test_1_result: (document.getElementById("ht1_res")?.value ?? "").toString(),
+    hiv_test_1_date_received: getDate("ht1_dr"),
+
+    hiv_test_2_sample_date: getDate("ht2_sd"),
+    hiv_test_2_type: (document.getElementById("ht2_type")?.value ?? "").toString(),
+    hiv_test_2_sample_id: get("ht2_id"),
+    hiv_test_2_result: (document.getElementById("ht2_res")?.value ?? "").toString(),
+    hiv_test_2_date_received: getDate("ht2_dr"),
+
+    hiv_test_3_sample_date: getDate("ht3_sd"),
+    hiv_test_3_type: (document.getElementById("ht3_type")?.value ?? "").toString(),
+    hiv_test_3_sample_id: get("ht3_id"),
+    hiv_test_3_result: (document.getElementById("ht3_res")?.value ?? "").toString(),
+    hiv_test_3_date_received: getDate("ht3_dr"),
+
+    // Birth details right above visits table
+    birth_date: getDate("birthDate"),
+    birth_weight_kg: get("birthWgt")
+  };
+}
+
+    function collectVisitRows(){
+      const rows = [];
+      const trs = tbody.querySelectorAll("tr");
+
+      trs.forEach(tr=>{
+        const age_months = (tr.querySelector('input[data-field="age_months"]')?.value || "").trim();
+        const visit_date = (tr.querySelector('input[data-field="visit_date"]')?.value || "").trim();
+        const hasAnyValue = [...tr.querySelectorAll('input')].some(el => (el.value || "").trim()) ||
+          [...tr.querySelectorAll('[data-toggle-group]')].some(el => (el.dataset.value || "").trim());
+
+        if(!hasAnyValue) return;
+        if(!age_months || !visit_date) return;
+
+        const getInput = (field) => (tr.querySelector(`input[data-field="${field}"]`)?.value || "").trim();
+        const getGroup = (field) => getGroupValue(tr.querySelector(`[data-field="${field}"][data-toggle-group]`));
+
+        rows.push({
+          age_months,
+          visit_date,
+          height_cm: getInput("height_cm"),
+          weight_kg: getInput("weight_kg"),
+          muac_cm: getInput("muac_cm"),
+          wasting_malnutrition: getGroup("wasting_malnutrition"),
+          breastfeeding: getGroup("breastfeeding"),
+          stopped_lt6m: getGroupValue(tr.querySelector('[data-field="stopped_lt6m"]')) ? "1" : "0",
+          stopped_ge6m: getGroupValue(tr.querySelector('[data-field="stopped_ge6m"]')) ? "1" : "0",
+          mother_status: getGroup("mother_status"),
+          abdominal_exam: getGroup("abdominal_exam"),
+          hiv_testing: getGroup("hiv_testing"),
+          hiv_infection: getGroup("hiv_infection"),
+          cpt: getInput("cpt"),
+          follow_up: getGroup("follow_up"),
+          next_appointment_date: getInput("next_appointment_date")
+        });
+      });
+
+      return rows;
+    }
+
+    document.getElementById("exportBtn").addEventListener("click", ()=>{
+      const status = document.getElementById("statusMsg");
+      status.textContent = "Preparing export…";
+
+      const header = collectHeaderData();
+      const visits = collectVisitRows();
+
+      if(visits.length === 0){
+        status.textContent = "No rows exported: please fill at least one Visit Date.";
+        return;
+      }
+        const columns = [
+            // Header + child/guardian + enrolment + HIV tests + birth details
+            "unique_child_id","hcc_reg_no","transfer_in_date","birth_cohort_month","birth_cohort_year",
+            "child_name","guardian_name","physical_address","sex","child_age","agrees_to_fup","guardian_relation","guardian_phone",
+            "mother_status_enrolment","art_reg_no","art_start_date","age_at_enrolment","nvp_start_date","nvp_duration",
+            "hiv_test_0_sample_date","hiv_test_0_type","hiv_test_0_sample_id","hiv_test_0_result","hiv_test_0_date_received",
+            "hiv_test_1_sample_date","hiv_test_1_type","hiv_test_1_sample_id","hiv_test_1_result","hiv_test_1_date_received",
+            "hiv_test_2_sample_date","hiv_test_2_type","hiv_test_2_sample_id","hiv_test_2_result","hiv_test_2_date_received",
+            "hiv_test_3_sample_date","hiv_test_3_type","hiv_test_3_sample_id","hiv_test_3_result","hiv_test_3_date_received",
+            "birth_date","birth_weight_kg",
+            // Visit-row fields
+            "age_months","visit_date","height_cm","weight_kg","muac_cm",
+            "wasting_malnutrition","breastfeeding","stopped_lt6m","stopped_ge6m",
+            "mother_status","abdominal_exam","hiv_testing","hiv_infection",
+            "cpt","follow_up","next_appointment_date"
+            ];
+
+      const lines = [];
+      lines.push(columns.map(csvEscape).join(","));
+      visits.forEach(v=>{
+        const record = {...header, ...v};
+        lines.push(columns.map(c=>csvEscape(record[c])).join(","));
+      });
+
+      const csv = lines.join("\n");
+      const rawId =  header.unique_child_id || header.hcc_reg_no || 'pinkcard';
+      console.log("hcc_reg_no:", header.hcc_reg_no);
+      console.log("hcc_reg_no:", header.unique_child_id);
+      const safeId = rawId.toString().trim().replace(/[^a-z0-9_-]/gi, '_');
+      const filename = `${safeId}_visits_export.csv`;
+      downloadText(filename, csv);
+
+      status.textContent = `Exported ${visits.length} visit row(s) to CSV.`;
+      clearForm()
+    });
+
+    function clearForm(){
+
+        // reset standard inputs
+        document.querySelectorAll("#pinkCardForm input, #pinkCardForm select").forEach(el=>{
+            el.value = "";
+        });
+
+        // reset toggle buttons
+        document.querySelectorAll("[data-toggle-group]").forEach(group=>{
+            delete group.dataset.value;
+
+            group.querySelectorAll(".optbtn").forEach(btn=>{
+                btn.setAttribute("aria-pressed","false");
+            });
+        });
+
+        // reset visit rows back to a single blank row
+        tbody.innerHTML = "";
+        addVisitRow();
+
+        document.getElementById("statusMsg").textContent = "Form cleared.";
+        }
+    // -----------------------------
+    // CSV Import
+    // - Reads a CSV file and fills form fields
+    // - Header fields are taken from the FIRST row
+    // - Visit rows are matched by age_months
+    // -----------------------------
+    function parseCSV(text){
+      // Minimal CSV parser supporting quotes. Returns array of rows (array of strings).
+      const rows = [];
+      let row = [];
+      let cur = "";
+      let inQuotes = false;
+
+      for(let i=0; i<text.length; i++){
+        const ch = text[i];
+        const next = text[i+1];
+
+        if(inQuotes){
+          if(ch === '"' && next === '"'){ // escaped quote
+            cur += '"'; i++;
+          } else if(ch === '"'){
+            inQuotes = false;
+          } else {
+            cur += ch;
+          }
+        } else {
+          if(ch === '"'){
+            inQuotes = true;
+          } else if(ch === ','){
+            row.push(cur); cur = "";
+          } else if(ch === '\n'){
+            row.push(cur); rows.push(row);
+            row = []; cur = "";
+          } else if(ch === '\r'){
+            // ignore
+          } else {
+            cur += ch;
+          }
+        }
+      }
+      // last cell
+      row.push(cur);
+      rows.push(row);
+
+      // remove empty trailing rows
+      return rows.filter(r => r.some(c => (c ?? "").toString().trim() !== ""));
+    }
+
+
+        // ---- small helpers ----
+    function setById(id, value){
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.value = (value ?? "").toString();
+    }
+
+    function setSelectById(id, value){
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.value = (value ?? "").toString();
+    }
+
+    function setToggleByName(groupName, value){
+    const g = document.querySelector(`[data-toggle-group][data-name="${CSS.escape(groupName)}"]`);
+    if(!g) return;
+    // relies on your existing setGroupValue() + refreshToggleUI() fix
+    setGroupValue(g, value);
+    }
+
+    // ---- fills ALL fields above the visits table, from ONE CSV row object ----
+    // Assumes the CSV headers use the same snake_case keys you export.
+    // (If your CSV uses different names, tell me and I’ll adjust the mapping.)
+    function fillAllAboveTableFromRow(obj){
+  if(!obj) return;
+
+  function pad2(n){
+    return String(n).padStart(2, "0");
+  }
+
+  function parseFlexibleDate(value){
+    const s = (value ?? "").toString().trim();
+    if(!s) return null;
+
+    let m;
+
+    // d/m/yy, d-m-yy, d.m.yy, dd/mm/yyyy
+    m = s.match(/^(\d{1,2})[\/.\-](\d{1,2})[\/.\-](\d{2}|\d{4})$/);
+    if(m){
+      let dd = parseInt(m[1], 10);
+      let mm = parseInt(m[2], 10);
+      let yyyy = parseInt(m[3], 10);
+      if(yyyy < 100) yyyy += 2000;
+      if(mm >= 1 && mm <= 12 && dd >= 1 && dd <= 31){
+        return { dd, mm, yyyy };
+      }
+    }
+
+    // yyyy-mm-dd, yyyy/mm/dd, yyyy.mm.dd
+    m = s.match(/^(\d{4})[\/.\-](\d{1,2})[\/.\-](\d{1,2})$/);
+    if(m){
+      const yyyy = parseInt(m[1], 10);
+      const mm = parseInt(m[2], 10);
+      const dd = parseInt(m[3], 10);
+      if(mm >= 1 && mm <= 12 && dd >= 1 && dd <= 31){
+        return { dd, mm, yyyy };
+      }
+    }
+
+    const d = new Date(s);
+    if(!Number.isNaN(d.getTime())){
+      return {
+        dd: d.getDate(),
+        mm: d.getMonth() + 1,
+        yyyy: d.getFullYear()
+      };
+    }
+
+    return null;
+  }
+
+  function toISODate(value){
+    const p = parseFlexibleDate(value);
+    if(!p) return "";
+    return `${p.yyyy}-${pad2(p.mm)}-${pad2(p.dd)}`;
+  }
+
+  function normalizeMonth(value){
+    const s = (value ?? "").toString().trim().toLowerCase();
+    if(!s) return "";
+    const map = {
+      jan: "January", january: "January",
+      feb: "February", february: "February",
+      mar: "March", march: "March",
+      apr: "April", april: "April",
+      may: "May",
+      jun: "June", june: "June",
+      jul: "July", july: "July",
+      aug: "August", august: "August",
+      sep: "September", sept: "September", september: "September",
+      oct: "October", october: "October",
+      nov: "November", november: "November",
+      dec: "December", december: "December"
+    };
+    return map[s] || value;
+  }
+
+  function setText(id, value){
+    const el = document.getElementById(id);
+    if(el) el.value = (value ?? "").toString();
+  }
+
+  function setDate(id, value){
+    const el = document.getElementById(id);
+    if(el) el.value = toISODate(value);
+  }
+  function setSelect(id, value){
+    const el = document.getElementById(id);
+    if(el) el.value = (value ?? "").toString();
+  }
+
+  function setMonthSelect(id, value){
+    const el = document.getElementById(id);
+    if(el) el.value = normalizeMonth(value);
+  }
+
+  function setToggleByName(groupName, value){
+    const g = document.querySelector(`[data-toggle-group][data-name="${CSS.escape(groupName)}"]`);
+    if(g) setGroupValue(g, value);
+  }
+
+  // top header
+  setText("uniqueChildId", obj.unique_child_id);
+  setText("hccRegNo", obj.hcc_reg_no);
+  setDate("transferInDate", obj.transfer_in_date);
+  setMonthSelect("birthCohortMonth", obj.birth_cohort_month);
+  setText("birthCohortYear", obj.birth_cohort_year);
+
+  // child / guardian
+  setText("childName", obj.child_name);
+  setText("guardianName", obj.guardian_name);
+  setText("physicalAddress", obj.physical_address);
+  setText("childAge", obj.child_age);
+  setText("guardianRelation", obj.guardian_relation);
+  setText("guardianPhone", obj.guardian_phone);
+
+  setToggleByName("sex", obj.sex);
+  setToggleByName("agree_fup", obj.agrees_to_fup);
+
+  // enrolment
+  setToggleByName("mother_status_enrol", obj.mother_status_enrolment);
+  setText("artRegNo", obj.art_reg_no);
+  setDate("artStartDate", obj.art_start_date);
+  setText("ageAtEnrol", obj.age_at_enrolment);
+  setDate("nvpStart", obj.nvp_start_date);
+  setText("nvpDuration", obj.nvp_duration);
+
+  // HIV testing
+  setDate("ht0_sd", obj.hiv_test_0_sample_date);
+  setSelect("ht0_type", obj.hiv_test_0_type);
+  setText("ht0_id", obj.hiv_test_0_sample_id);
+  setSelect("ht0_res", obj.hiv_test_0_result);
+  setDate("ht0_dr", obj.hiv_test_0_date_received);
+
+  setDate("ht1_sd", obj.hiv_test_1_sample_date);
+  setSelect("ht1_type", obj.hiv_test_1_type);
+  setText("ht1_id", obj.hiv_test_1_sample_id);
+  setSelect("ht1_res", obj.hiv_test_1_result);
+  setDate("ht1_dr", obj.hiv_test_1_date_received);
+
+  setDate("ht2_sd", obj.hiv_test_2_sample_date);
+  setSelect("ht2_type", obj.hiv_test_2_type);
+  setText("ht2_id", obj.hiv_test_2_sample_id);
+  setSelect("ht2_res", obj.hiv_test_2_result);
+  setDate("ht2_dr", obj.hiv_test_2_date_received);
+
+  setDate("ht3_sd", obj.hiv_test_3_sample_date);
+  setSelect("ht3_type", obj.hiv_test_3_type);
+  setText("ht3_id", obj.hiv_test_3_sample_id);
+  setSelect("ht3_res", obj.hiv_test_3_result);
+  setDate("ht3_dr", obj.hiv_test_3_date_received);
+
+  // birth details
+  setDate("birthDate", obj.birth_date);
+  setText("birthWgt", obj.birth_weight_kg);
+
+  refreshToggleUI(document);
+}
+
+
+    function normalizeKey(s){
+      return (s ?? "").toString().trim().toLowerCase();
+    }
+
+    function setInputValue(id, value){
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.value = (value ?? "").toString();
+    }
+
+    function fillHeaderFromRow(obj){
+      if(obj.unique_child_id) setInputValue("uniqueChildId", obj.unique_child_id);
+      if(obj.hcc_reg_no) setInputValue("hccRegNo", obj.hcc_reg_no);
+      if(obj.transfer_in_date) setInputValue("transferInDate", obj.transfer_in_date);
+      if(obj.birth_cohort_month) setInputValue("birthCohortMonth", obj.birth_cohort_month);
+      if(obj.birth_cohort_year) setInputValue("birthCohortYear", obj.birth_cohort_year);
+      if(obj.birth_date) setInputValue("birthDate", obj.birth_date);
+      if(obj.birth_weight_kg) setInputValue("birthWgt", obj.birth_weight_kg);
+    }
+
+    function findVisitRowByAge(ageMonths){
+      const age = (ageMonths ?? "").toString().trim();
+      return tbody.querySelector(`tr[data-age-months="${CSS.escape(age)}"]`);
+    }
+
+    function fillVisitRow(tr, obj){
+      if(!tr) return;
+
+      const setCell = (field, value) => {
+        const el = tr.querySelector(`input[data-field="${field}"]`);
+        if(el) el.value = (value ?? "").toString();
+      };
+
+      const setGroup = (field, value) => {
+        const group = tr.querySelector(`[data-field="${field}"][data-toggle-group]`);
+        setGroupValue(group, value);
+      };
+
+      setCell("age_months", obj.age_months);
+      setCell("visit_date", obj.visit_date);
+      setCell("height_cm", obj.height_cm);
+      setCell("weight_kg", obj.weight_kg);
+      setCell("muac_cm", obj.muac_cm);
+      setGroup("wasting_malnutrition", obj.wasting_malnutrition);
+      setGroup("breastfeeding", obj.breastfeeding);
+      // booleans
+      setGroupValue(tr.querySelector('[data-field="stopped_lt6m"]'), obj.stopped_lt6m === "1" || /^(true|yes|y|✓)$/i.test(obj.stopped_lt6m || ""));
+      setGroupValue(tr.querySelector('[data-field="stopped_ge6m"]'), obj.stopped_ge6m === "1" || /^(true|yes|y|✓)$/i.test(obj.stopped_ge6m || ""));
+      setGroup("mother_status", obj.mother_status);
+      setGroup("abdominal_exam", obj.abdominal_exam);
+      setGroup("hiv_testing", obj.hiv_testing);
+      setGroup("hiv_infection", obj.hiv_infection);
+      setCell("cpt", obj.cpt);
+      setGroup("follow_up", obj.follow_up);
+      setCell("next_appointment_date", obj.next_appointment_date);
+    }
+
+document.getElementById("importCsv").addEventListener("change", async (e)=>{
+  const status = document.getElementById("statusMsg");
+  const file = e.target.files?.[0];
+  if(!file) return;
+
+  function pad2(n){
+    return String(n).padStart(2, "0");
+  }
+
+  function parseFlexibleDate(value){
+    const s = (value ?? "").toString().trim();
+    if(!s) return null;
+
+    let m;
+
+    // d/m/yy, d-m-yy, d.m.yy, dd/mm/yyyy, etc.
+    m = s.match(/^(\d{1,2})[\/.\-](\d{1,2})[\/.\-](\d{2}|\d{4})$/);
+    if(m){
+      let dd = parseInt(m[1], 10);
+      let mm = parseInt(m[2], 10);
+      let yyyy = parseInt(m[3], 10);
+      if(yyyy < 100) yyyy += 2000;
+      if(mm >= 1 && mm <= 12 && dd >= 1 && dd <= 31){
+        return { dd, mm, yyyy };
+      }
+    }
+
+    // yyyy-mm-dd, yyyy/mm/dd, yyyy.mm.dd
+    m = s.match(/^(\d{4})[\/.\-](\d{1,2})[\/.\-](\d{1,2})$/);
+    if(m){
+      const yyyy = parseInt(m[1], 10);
+      const mm = parseInt(m[2], 10);
+      const dd = parseInt(m[3], 10);
+      if(mm >= 1 && mm <= 12 && dd >= 1 && dd <= 31){
+        return { dd, mm, yyyy };
+      }
+    }
+
+    // Textual dates like "10 may 2023"
+    const d = new Date(s);
+    if(!Number.isNaN(d.getTime())){
+      return {
+        dd: d.getDate(),
+        mm: d.getMonth() + 1,
+        yyyy: d.getFullYear()
+      };
+    }
+
+    return null;
+  }
+
+  function toISODate(value){
+    const p = parseFlexibleDate(value);
+    if(!p) return (value ?? "").toString().trim();
+    return `${p.yyyy}-${pad2(p.mm)}-${pad2(p.dd)}`;
+  }
+  function toDDMMYYYY(value){
+  const p = parseFlexibleDate(value);
+  if(!p) return (value ?? "").toString().trim();
+  return `${String(p.dd).padStart(2, "0")}/${String(p.mm).padStart(2, "0")}/${p.yyyy}`;
+  }
+
+  function normalizeImportedObject(obj){
+    const out = { ...obj };
+    Object.keys(out).forEach((key) => {
+      if (/date/i.test(key)) {
+        out[key] = toDDMMYYYY(out[key]);
+      }
+    });
+    return out;
+  }
+
+  status.textContent = `Reading ${file.name}…`;
+
+  const text = await file.text();
+  const raw = parseCSV(text);
+  console.log(raw);
+  if(raw.length < 2){
+    status.textContent = "CSV looks empty (needs header row + data rows).";
+    return;
+  }
+
+  const headers = raw[0].map(normalizeKey);
+  const rows = raw.slice(1);
+
+  const objects = rows.map(r=>{
+    const obj = {};
+    headers.forEach((h, i)=> obj[h] = (r[i] ?? "").toString().trim());
+    return normalizeImportedObject(obj);
+  });
+
+  // Fill ALL fields above the table from the first row
+  fillAllAboveTableFromRow(objects[0]);
+
+  // Fill visit rows by age_months
+  let filled = 0, skipped = 0;
+  objects.forEach(obj=>{
+    const age = obj.age_months ?? obj.age ?? "";
+    if(age === "") { skipped++; return; }
+    let tr = findVisitRowByAge(age);
+    if(!tr){ tr = addVisitRow(age); }
+    fillVisitRow(tr, obj);
+    filled++;
+  });
+
+  refreshToggleUI(document);
+  status.textContent = `Import done. Filled ${filled} visit row(s). Skipped ${skipped} row(s).`;
+  e.target.value = "";
+});
+
+
+    // -----------------------------
+    // Document-wide dictation only
+    // - One microphone toggle for the whole page
+    // - Click any eligible field to change the target
+    // - No per-field microphone buttons
+    // -----------------------------
+    let activeRecognition = null;
+    let documentDictationEnabled = false;
+    let documentRecognitionStarting = false;
+    let activeDictationField = null;
+
+    function getSpeechRecognition(){
+      return window.SpeechRecognition || window.webkitSpeechRecognition || null;
+    }
+
+    function supportsDictation(){
+      return !!getSpeechRecognition();
+    }
+
+    function normalizeSpeechText(text){
+      return (text || '').replace(/\s+/g, ' ').trim();
+    }
+
+    function pad2(n){
+      return String(n).padStart(2, '0');
+    }
+
+    function toIsoDate(date){
+      return `${date.getFullYear()}-${pad2(date.getMonth()+1)}-${pad2(date.getDate())}`;
+    }
+
+    function isEligibleField(field){
+      if(!field) return false;
+      if(field.tagName !== 'INPUT') return false;
+      if(field.disabled || field.readOnly) return false;
+      if(field.type === 'button' || field.type === 'submit' || field.type === 'reset' || field.type === 'file' || field.type === 'hidden') return false;
+      return field.classList.contains('code-input') || ['text', 'date', 'number'].includes(field.type);
+    }
+
+    function getCurrentDictationField(){
+      if(isEligibleField(document.activeElement)) return document.activeElement;
+      if(isEligibleField(activeDictationField)) return activeDictationField;
+      return document.querySelector('input[data-dictation-target="1"]') || null;
+    }
+
+    function markDictationTarget(field){
+      document.querySelectorAll('input[data-dictation-target="1"]').forEach(el => delete el.dataset.dictationTarget);
+      if(isEligibleField(field)){
+        field.dataset.dictationTarget = '1';
+        activeDictationField = field;
+      }
+    }
+
+    function updateGlobalDictationUI(){
+      const btn = document.getElementById('globalDictationBtn');
+      const hint = document.getElementById('globalDictationHint');
+      if(!btn || !hint) return;
+
+      if(!supportsDictation()){
+        btn.disabled = true;
+        btn.textContent = '🎤 Dictation not supported';
+        hint.textContent = 'This browser does not support Web Speech dictation.';
+        return;
+      }
+
+      btn.classList.toggle('is-listening', documentDictationEnabled);
+      btn.setAttribute('aria-pressed', documentDictationEnabled ? 'true' : 'false');
+      btn.textContent = documentDictationEnabled ? '🎤 Document dictation is on' : '🎤 Enable document dictation';
+
+      const field = getCurrentDictationField();
+      if(documentDictationEnabled){
+        hint.textContent = field
+          ? `Dictation is on. Current target: ${field.name || field.id || 'selected field'}. Click another field any time to switch.`
+          : 'Dictation is on. Click an editable text, date, or number field, then speak.';
+      } else {
+        hint.textContent = 'Turn on dictation once, then click any editable text, date, or number field and speak.';
+      }
+    }
+
+    function parseSpokenDate(text){
+      const raw = normalizeSpeechText(text).toLowerCase();
+      if(!raw) return null;
+
+      const cleaned = raw
+        .replace(/,/g, ' ')
+        .replace(/\b(the|of)\b/g, ' ')
+        .replace(/\b(\d{1,2})(st|nd|rd|th)\b/g, '$1')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      const months = {
+        january:1, february:2, march:3, april:4, may:5, june:6,
+        july:7, august:8, september:9, october:10, november:11, december:12,
+        jan:1, feb:2, mar:3, apr:4, jun:6, jul:7, aug:8, sep:9, sept:9, oct:10, nov:11, dec:12
+      };
+
+      const now = new Date();
+      if(cleaned === 'today') return toIsoDate(now);
+      if(cleaned === 'yesterday'){
+        const d = new Date(now);
+        d.setDate(d.getDate() - 1);
+        return toIsoDate(d);
+      }
+      if(cleaned === 'tomorrow'){
+        const d = new Date(now);
+        d.setDate(d.getDate() + 1);
+        return toIsoDate(d);
+      }
+
+      let m = cleaned.match(/^(\d{4})[-\/](\d{1,2})[-\/](\d{1,2})$/);
+      if(m){
+        return `${m[1]}-${pad2(m[2])}-${pad2(m[3])}`;
+      }
+
+      m = cleaned.match(/^(\d{1,2})[-\/](\d{1,2})[-\/](\d{2,4})$/);
+      if(m){
+        let year = m[3];
+        if(year.length === 2) year = `20${year}`;
+        return `${year}-${pad2(m[2])}-${pad2(m[1])}`;
+      }
+
+      const parts = cleaned.split(' ').filter(Boolean);
+      let day = null, month = null, year = null;
+      parts.forEach(part => {
+        if(months[part]){
+          month = months[part];
+          return;
+        }
+        if(/^\d+$/.test(part)){
+          if(part.length === 4){
+            year = part;
+          } else if(day === null) {
+            day = part;
+          } else if(year === null) {
+            year = part.length === 2 ? `20${part}` : part;
+          }
+        }
+      });
+
+      if(day !== null && month !== null){
+        if(year === null) year = String(now.getFullYear());
+        return `${year}-${pad2(month)}-${pad2(day)}`;
+      }
+
+      return null;
+    }
+
+    function parseSpokenNumber(text){
+      const normalized = normalizeSpeechText(text).toLowerCase()
+        .replace(/\bpoint\b/g, '.')
+        .replace(/\bcomma\b/g, '.')
+        .replace(/\s+/g, '');
+      const match = normalized.match(/-?\d+(?:\.\d+)?/);
+      return match ? match[0] : '';
+    }
+
+    function applyTranscriptToField(field, transcript){
+      if(!field) return;
+
+      let value = transcript;
+      if(field.type === 'date'){
+        value = parseSpokenDate(transcript);
+        if(!value){
+          alert('Could not understand the date. Try saying, for example, 12 March 2026.');
+          return;
+        }
+      } else if(field.type === 'number'){
+        value = parseSpokenNumber(transcript);
+        if(value === ''){
+          alert('Could not understand the number.');
+          return;
+        }
+      } else {
+        value = normalizeSpeechText(transcript);
+        if(field.value.trim()) value = `${field.value.trim()} ${value}`;
+      }
+
+      field.value = value;
+      field.dispatchEvent(new Event('input', { bubbles:true }));
+      field.dispatchEvent(new Event('change', { bubbles:true }));
+      field.focus();
+      markDictationTarget(field);
+      updateGlobalDictationUI();
+    }
+
+    function stopDocumentRecognition(){
+      const recognition = activeRecognition;
+      activeRecognition = null;
+      if(recognition){
+        try{ recognition.onend = null; recognition.stop(); } catch(e){}
+      }
+      documentRecognitionStarting = false;
+    }
+
+    function startDocumentRecognition(){
+      if(!documentDictationEnabled || activeRecognition || documentRecognitionStarting) return;
+      const SpeechRecognition = getSpeechRecognition();
+      if(!SpeechRecognition) return;
+
+      documentRecognitionStarting = true;
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.continuous = true;
+      recognition.maxAlternatives = 1;
+
+      recognition.onstart = function(){
+        documentRecognitionStarting = false;
+        activeRecognition = recognition;
+        updateGlobalDictationUI();
+      };
+
+      recognition.onresult = function(event){
+        for(let i = event.resultIndex; i < event.results.length; i++){
+          const result = event.results[i];
+          if(!result.isFinal) continue;
+          const transcript = result[0]?.transcript || '';
+          const field = getCurrentDictationField();
+          if(!field){
+            alert('Click a text, date, or number field first so dictation knows where to put the text.');
+            continue;
+          }
+          applyTranscriptToField(field, transcript);
+        }
+      };
+
+      recognition.onerror = function(event){
+        console.log('Speech error:', event.error);
+        if(event.error === 'not-allowed' || event.error === 'service-not-allowed'){
+          documentDictationEnabled = false;
+          stopDocumentRecognition();
+          updateGlobalDictationUI();
+          alert('Microphone access was denied. Please allow microphone access and try again.');
+          return;
+        }
+      };
+
+      recognition.onend = function(){
+        const shouldRestart = documentDictationEnabled;
+        activeRecognition = null;
+        documentRecognitionStarting = false;
+        updateGlobalDictationUI();
+        if(shouldRestart){
+          window.setTimeout(startDocumentRecognition, 250);
+        }
+      };
+
+      try {
+        recognition.start();
+      } catch(err) {
+        documentRecognitionStarting = false;
+        console.log(err);
+      }
+    }
+
+    function toggleDocumentDictation(){
+      if(!supportsDictation()){
+        alert('Voice recognition is not supported in this browser.');
+        return;
+      }
+      documentDictationEnabled = !documentDictationEnabled;
+      updateGlobalDictationUI();
+      if(documentDictationEnabled){
+        startDocumentRecognition();
+      } else {
+        stopDocumentRecognition();
+      }
+    }
+
+    function wireEligibleFields(root=document){
+      root.querySelectorAll('input').forEach(field => {
+        if(!isEligibleField(field)) return;
+        if(field.dataset.dictationWired === '1') return;
+        field.dataset.dictationWired = '1';
+        field.addEventListener('focus', () => {
+          markDictationTarget(field);
+          updateGlobalDictationUI();
+        });
+        field.addEventListener('click', () => {
+          markDictationTarget(field);
+          updateGlobalDictationUI();
+        });
+      });
+    }
+
+    wireEligibleFields(document);
+    document.getElementById('globalDictationBtn')?.addEventListener('click', toggleDocumentDictation);
+    updateGlobalDictationUI();
+  </script>
+</body>
+</html>

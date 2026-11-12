@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Card HTML App</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <h1>Pink Card Data Entry</h1>
+        <p class="subtitle">Pure HTML/JavaScript version with PDF processing and the original pink form</p>
+      </div>
+      <div class="dir-box">
+        <div class="label">Working directory</div>
+        <div id="workingDirDisplay" class="path-display">Not selected</div>
+        <button id="selectFolderBtn" class="btn btn-secondary">Select Folder</button>
+      </div>
+    </header>
+
+    <section id="homeSection" class="section active">
+      <main class="home-grid">
+        <section class="card feature-card review-feature-card">
+          <h2>Data Entry</h2>
+          <h3>PDF workflow</h3>
+          <p class="muted">Choose a 2-page scanned PDF, preview each page, rotate if needed, and save page images into the working directory.</p>
+
+          <div class="field">
+            <label for="samplePdfSelect">Choose a sample PDF</label>
+            <div class="inline-group">
+              <select id="samplePdfSelect">
+                <option value="SampleA1815.pdf">Sample A1815</option>
+                <option value="SampleL16.pdf">Sample L16</option>
+                <option value="SampleM28.pdf">Sample M28</option>
+              </select>
+              <button id="loadSampleBtn" type="button" class="btn btn-primary">Preview Sample</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>PDF file</label>
+            <div class="inline-group">
+              <input id="pdfFileDisplay" type="text" readonly placeholder="No file selected" />
+              <button id="selectPdfBtn" class="btn btn-primary">Select PDF</button>
+            </div>
+          </div>
+
+
+          <div class="actions">
+            <button id="openPdfWorkspaceBtn" class="btn btn-primary" disabled>Open PDF Workspace</button>
+          </div>
+          <hr />
+          <h3>Manual Pink Card Entry</h3>
+          <p>Use this to manually enter data from a pink card form</p>
+          <div class="actions">
+            <button id="openFormBtn" class="btn btn-primary">Open Form</button>
+          </div>
+        </section>
+
+        <section class="card feature-card review-feature-card">
+          <div class="feature-heading">
+            <div class="manual-icon">↗</div>
+            <div>
+              <h2>Visit Review &amp; Trends</h2>
+              <p class="muted">Check relationships between dates and review clinical measurements, treatment, and diagnostic history across visits.</p>
+            </div>
+          </div>
+          <div class="field">
+            <label>Visits CSV</label>
+            <div class="inline-group">
+              <input id="reviewFileDisplay" type="text" readonly placeholder="Choose an exported visits CSV" />
+              <button id="selectReviewCsvBtn" class="btn btn-secondary">Choose CSV</button>
+            </div>
+          </div>
+          <div class="actions">
+            <button id="openReviewBtn" class="btn btn-primary" disabled>Open Visit Review</button>
+          </div>
+        </section>
+
+        <section class="card feature-card review-feature-card">
+          <div class="feature-heading">
+            <div class="manual-icon">▦</div>
+            <div>
+              <h2>Cohort &amp; Facility Analysis</h2>
+              <p class="muted">Load one merged facility CSV containing multiple children to analyse whether date consistency is associated with follow-up outcome.</p>
+            </div>
+          </div>
+          <div class="field">
+            <label>Cohort CSV</label>
+            <div class="inline-group">
+              <input id="cohortFileDisplay" type="text" readonly placeholder="Choose a merged cohort or facility CSV" />
+              <button id="selectCohortCsvBtn" class="btn btn-secondary">Choose Cohort CSV</button>
+            </div>
+          </div>
+          <div class="actions">
+            <button id="openCohortBtn" class="btn btn-primary" disabled>Open Cohort Analysis</button>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <section id="reviewSection" class="section">
+      <div class="section-header card compact-row">
+        <div>
+          <h2>Visit Review &amp; Trends</h2>
+          <div id="reviewSubtitle" class="muted">Reviewing captured visit data</div>
+        </div>
+        <div class="actions">
+          <button id="changeReviewCsvBtn" class="btn btn-secondary">Change CSV</button>
+          <button id="backHomeFromReviewBtn" class="btn btn-secondary">Back to Home</button>
+        </div>
+      </div>
+
+      <div id="reviewEmpty" class="card review-empty">
+        <h2>No visit data loaded</h2>
+        <p class="muted">Choose a CSV exported by the Pink Card form to begin.</p>
+      </div>
+
+      <main id="reviewContent" class="review-content" hidden>
+        <section class="review-toolbar card">
+          <div class="field review-child-field">
+            <label for="reviewChildSelect">Child record</label>
+            <div class="patient-selector-line">
+              <button id="previousChildBtn" class="btn btn-secondary patient-nav-btn" type="button">← Previous</button>
+              <select id="reviewChildSelect"></select>
+              <button id="nextChildBtn" class="btn btn-secondary patient-nav-btn" type="button">Next →</button>
+            </div>
+          </div>
+          <div id="reviewPatientMeta" class="patient-meta"></div>
+        </section>
+
+        <section class="kpi-grid">
+          <article class="card kpi"><span>Visits</span><strong id="reviewVisitCount">0</strong></article>
+          <article class="card kpi"><span>Date issues</span><strong id="reviewIssueCount">0</strong></article>
+          <article class="card kpi"><span>Latest weight</span><strong id="reviewLatestWeight">—</strong></article>
+          <article class="card kpi"><span>Latest visit</span><strong id="reviewLatestVisit">—</strong></article>
+        </section>
+
+        <section class="review-grid">
+          <article class="card chart-card">
+            <div class="card-title-row"><div><h2>Weight &amp; CPT over time</h2><p class="muted small">Weight, numeric CPT dose, and HIV testing events recorded at each dated visit</p></div></div>
+            <div id="weightChart" class="chart-wrap"></div>
+          </article>
+          <article class="card">
+            <div class="card-title-row"><div><h2>Date relationships</h2><p class="muted small">Potential conflicts that need verification</p></div><span id="dateStatusBadge" class="status-badge"></span></div>
+            <div id="dateIssues" class="issue-list"></div>
+          </article>
+        </section>
+
+        <section class="card visit-history-card">
+          <h2>Treatment &amp; diagnostic history</h2>
+          <p class="muted small">A visit-by-visit view of the clinical fields captured on the card.</p>
+          <div class="table-wrap"><table class="review-table"><thead><tr><th>Visit</th><th>Measurements</th><th>Nutrition / exam</th><th>HIV diagnostics</th><th>Treatment / follow-up</th><th>Next appointment</th></tr></thead><tbody id="reviewHistoryBody"></tbody></table></div>
+        </section>
+
+        <section class="card test-analysis-card">
+          <div class="card-title-row">
+            <div>
+              <h2>HIV test analysis by visit</h2>
+              <p class="muted small">A visit-by-visit list matching each indicated test to the HIV testing record by sample date and test type.</p>
+            </div>
+            <div id="testMatchSummary" class="test-summary"></div>
+          </div>
+          <div id="testAnalysisEmpty" class="chart-empty test-empty">No visits indicate that an HIV test was performed.</div>
+          <div id="testAnalysisTableWrap" class="table-wrap" hidden>
+            <table class="review-table test-analysis-table">
+              <thead><tr><th>Visit test</th><th>Record match</th><th>Sample ID</th><th>Result</th><th>Result received</th><th>Assessment</th></tr></thead>
+              <tbody id="testAnalysisBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+      </main>
+    </section>
+
+    <section id="cohortSection" class="section">
+      <div class="section-header card compact-row">
+        <div>
+          <h2>Cohort &amp; Facility Analysis</h2>
+          <div id="cohortSubtitle" class="muted">Schedule consistency and follow-up outcomes</div>
+        </div>
+        <div class="actions">
+          <button id="changeCohortCsvBtn" class="btn btn-secondary">Change Cohort CSV</button>
+          <button id="backHomeFromCohortBtn" class="btn btn-secondary">Back to Home</button>
+        </div>
+      </div>
+
+      <div id="cohortEmpty" class="card review-empty">
+        <h2>No cohort data loaded</h2>
+        <p class="muted">Choose one merged CSV containing visits for multiple children. A facility column is optional.</p>
+      </div>
+
+      <main id="cohortContent" class="review-content" hidden>
+        <section class="review-toolbar card">
+          <div class="field review-child-field">
+            <label for="cohortFacilitySelect">Facility</label>
+            <select id="cohortFacilitySelect"><option value="__all__">All facilities</option></select>
+          </div>
+          <div id="cohortMeta" class="patient-meta"></div>
+        </section>
+
+        <section class="card schedule-analysis-card">
+          <div class="card-title-row">
+            <div>
+              <h2>Schedule consistency &amp; follow-up</h2>
+              <p class="muted small">Cohort-level association between date consistency and each child’s latest recorded follow-up outcome.</p>
+            </div>
+            <span id="scheduleEvidenceBadge" class="status-badge"></span>
+          </div>
+          <div id="scheduleAnalysisSummary" class="analysis-callout"></div>
+          <div class="association-grid">
+            <article class="association-stat"><span>Children analysed</span><strong id="scheduleAnalysedCount">0</strong></article>
+            <article class="association-stat"><span>Consistent schedule retention</span><strong id="consistentRetentionRate">—</strong></article>
+            <article class="association-stat"><span>Schedule-issue retention</span><strong id="issueRetentionRate">—</strong></article>
+            <article class="association-stat"><span>Odds ratio (95% CI)</span><strong id="scheduleOddsRatio">—</strong></article>
+          </div>
+          <div class="table-wrap">
+            <table class="review-table association-table">
+              <thead><tr><th>Schedule group</th><th>Retained (Con)</th><th>Unfavourable (Dis/Def/D)</th><th>Other/excluded</th><th>Total children</th></tr></thead>
+              <tbody id="scheduleAnalysisBody"></tbody>
+            </table>
+          </div>
+          <p class="analysis-note">This is an association, not proof of causation. Date consistency can reflect data quality as well as actual attendance behaviour. ART and transfer-out outcomes are shown but excluded from the binary odds-ratio calculation.</p>
+        </section>
+      </main>
+    </section>
+
+    <section id="pdfSection" class="section">
+      <div class="section-header card compact-row">
+        <div>
+          <h2>PDF Workspace</h2>
+          <label for="extractionModel">GPT model</label>
+          <select id="extractionModel">
+            <option value="gpt-4.1-mini" selected>GPT-4.1 mini (default)</option>
+            <option value="latest">Latest GPT — GPT-6.1 Sol</option>
+          </select>
+          <div class="muted">Preview, rotate, and save page images</div>
+        </div>
+        <div class="actions">
+          <button id="backHomeFromPdfBtn" class="btn btn-secondary">Back to Home</button>
+          <button id="continueToFormBtn" class="btn btn-primary">Continue to Form</button>
+        </div>
+      </div>
+
+      <section class="card" style="margin-top:20px">
+          <div class="form-row">
+            <div class="field">
+              <label for="outputFormat">Output format</label>
+              <select id="outputFormat">
+                <option value="png">PNG</option>
+                <option value="jpg">JPG</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="scaleSelect">Quality</label>
+              <select id="scaleSelect">
+                <option value="1.5">Normal</option>
+                <option value="2" selected>High</option>
+                <option value="3">Very high</option>
+              </select>
+            </div>
+          </div>
+
+      </section>
+
+      <main class="preview-grid">
+        <section class="card preview-card">
+          <h2>Page 1</h2>
+          <div class="preview-canvas-wrap"><canvas id="page1Canvas"></canvas></div>
+          <div class="rotation-line">Rotation: <span id="page1RotationValue">0°</span></div>
+          <div class="actions">
+            <button id="page1LeftBtn" class="btn btn-secondary">Rotate Left</button>
+            <button id="page1RightBtn" class="btn btn-secondary">Rotate Right</button>
+            <button id="page1ResetBtn" class="btn btn-secondary">Reset</button>
+          </div>
+        </section>
+
+        <section class="card preview-card">
+          <h2>Page 2</h2>
+          <div class="preview-canvas-wrap"><canvas id="page2Canvas"></canvas></div>
+          <div class="rotation-line">Rotation: <span id="page2RotationValue">0°</span></div>
+          <div class="actions">
+            <button id="page2LeftBtn" class="btn btn-secondary">Rotate Left</button>
+            <button id="page2RightBtn" class="btn btn-secondary">Rotate Right</button>
+            <button id="page2ResetBtn" class="btn btn-secondary">Reset</button>
+          </div>
+        </section>
+      </main>
+
+      <div class="card compact-row">
+        <div id="savedImagesDisplay" class="path-display">No images saved yet</div>
+        <div class="actions">
+          <button id="createImagesBtn" class="btn btn-primary">Create Page Images</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="formSection" class="section">
+     <!-- <div class="section-header card compact-row">
+        <div>
+          <h2>Pink Card Form</h2>
+          <div class="muted">Original uploaded HTML form embedded below</div>
+        </div>
+        <div class="actions">
+          <button id="backHomeFromFormBtn" class="btn btn-secondary">Back to Home</button>
+        </div>
+      </div>--> 
+
+      <div class="form-layout">
+        <div class="card iframe-card">
+          <iframe id="pinkFormFrame" src="./pink-form-dynamic.html" title="Pink card form"></iframe>
+        </div>
+       <aside class="sidebar">
+          <section class="card">
+            <h2>Workspace</h2>
+            <button id="reviewCurrentFormBtn" type="button" class="btn btn-primary">Review &amp; Trends</button>
+            <p class="muted small">Check current entries for date inconsistencies and visit trends.</p>
+            <div class="sidebar-line">Working folder: <span id="sidebarFolderStatus">Not selected</span></div>
+            <div class="sidebar-line">PDF selected: <span id="sidebarPdfStatus">No</span></div>
+            <div class="sidebar-line">Page images: <span id="sidebarImagesStatus">None yet</span></div>
+            <div class="actions" style="margin-top:14px">
+              <button id="verifyPage1Btn" class="btn btn-secondary" disabled>View Page 1</button>
+              <button id="verifyPage2Btn" class="btn btn-secondary" disabled>View Page 2</button>
+            </div>
+            <p class="muted small">Folder writing works in Chromium-based browsers that support the File System Access API. In Safari, saving falls back to normal downloads.</p>
+          </section>
+           <div class="actions">
+          <button id="backHomeFromFormBtn" class="btn btn-secondary">Back to Home</button>
+        </div>
+        </aside> 
+      </div>
+    </section>
+
+    <dialog id="formReviewDialog" aria-labelledby="formReviewTitle">
+      <div class="compact-row">
+        <div><h2 id="formReviewTitle">Current form — Visit Review &amp; Trends</h2><p class="muted small">Dates are standardized for analysis; original form entries are preserved. Close to edit, then reopen to refresh.</p></div>
+        <button id="closeFormReviewBtn" type="button" class="btn btn-primary">Back to editing</button>
+      </div>
+      <div id="formReviewNotice" role="status" class="card"></div>
+      <div id="formReviewHost"></div>
+    </dialog>
+    <dialog id="pageVerifyDialog" aria-labelledby="pageVerifyTitle">
+      <div class="compact-row">
+        <h2 id="pageVerifyTitle">Verify page</h2>
+        <div class="actions">
+          <button id="verifySwitchBtn" class="btn btn-secondary">Other page</button>
+          <button id="verifyZoomOutBtn" class="btn btn-secondary" aria-label="Zoom out">−</button>
+          <button id="verifyZoomInBtn" class="btn btn-secondary" aria-label="Zoom in">+</button>
+          <button id="verifyCloseBtn" class="btn btn-primary">Close</button>
+        </div>
+      </div>
+      <div class="verify-image-scroll"><img id="verifyPageImage" alt="Pink card page for checking entered values" /></div>
+    </dialog>
+    <footer class="footerbar">
+      <div id="statusMessage">Status: Ready</div>
+    </footer>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
