@@ -1,0 +1,6 @@
+﻿ocr_experiment,group_level,group_code,field_scope,compared_cells,reference_populated,correct,substitutions,omissions,errors,candidate_only_values,both_missing,accuracy,disagreement_rate
+OCR_gpt41_mini,aggregate,ALL,15_requested_indicators,31853,28134,22192,5650,292,5942,1974,1745,0.7887964740172034,0.21120352598279662
+OCR_gpt4o_mini,aggregate,ALL,15_requested_indicators,11576,10228,5222,4264,742,5006,926,422,0.5105592491200626,0.48944075087993744
+OCR_gpt56_terra,aggregate,ALL,15_requested_indicators,33532,29558,26809,2473,276,2749,824,3150,0.906996413830435,0.09300358616956492
+OCR_nemotron,aggregate,ALL,15_requested_indicators,30075,26467,9445,15949,1073,17022,1906,1702,0.35685948539690937,0.6431405146030906
+OCR_qwen,aggregate,ALL,15_requested_indicators,32692,28792,23551,5021,220,5241,2154,1746,0.817970269519311,0.18202973048068907

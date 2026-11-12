@@ -1,0 +1,6 @@
+﻿model,eligible_fields,matched_cards,report_folder
+OCR_gpt41_mini,41,340,C:\Users\Lenovo\Documents\PINKCARD_READER_PRJ\OUTPUTS\hcc_pseudonymised_agreement\04_accuracy_OCR_gpt41_mini_vs_Human_1
+OCR_gpt4o_mini,41,290,C:\Users\Lenovo\Documents\PINKCARD_READER_PRJ\OUTPUTS\hcc_pseudonymised_agreement\04_accuracy_OCR_gpt4o_mini_vs_Human_1
+OCR_gpt56_terra,41,352,C:\Users\Lenovo\Documents\PINKCARD_READER_PRJ\OUTPUTS\hcc_pseudonymised_agreement\04_accuracy_OCR_gpt56_terra_vs_Human_1
+OCR_nemotron,41,318,C:\Users\Lenovo\Documents\PINKCARD_READER_PRJ\OUTPUTS\hcc_pseudonymised_agreement\04_accuracy_OCR_nemotron_vs_Human_1
+OCR_qwen,41,345,C:\Users\Lenovo\Documents\PINKCARD_READER_PRJ\OUTPUTS\hcc_pseudonymised_agreement\04_accuracy_OCR_qwen_vs_Human_1

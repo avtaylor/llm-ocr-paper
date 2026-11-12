@@ -1,0 +1,5 @@
+﻿district_code,left_dataset,right_dataset,left_cards,right_cards,matched_pairs,left_unmatched,right_unmatched
+D1,OCR_nemotron,Human_1,96,97,76,20,21
+D2,OCR_nemotron,Human_1,114,119,77,37,42
+D3,OCR_nemotron,Human_1,113,111,94,19,17
+D4,OCR_nemotron,Human_1,96,98,71,25,27

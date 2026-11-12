@@ -7,7 +7,7 @@ from pathlib import Path
 
 from analyse_accuracy import ROOT, write
 
-REPORTS = ROOT / "OUTPUTS/selected_agreement"
+REPORTS = ROOT / "OUTPUTS/hcc_pseudonymised_agreement"
 
 
 def rows(path):

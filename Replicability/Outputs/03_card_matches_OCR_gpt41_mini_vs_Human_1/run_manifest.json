@@ -1,0 +1,40 @@
+{
+  "left": "OCR_gpt41_mini",
+  "right": "Human_1",
+  "totals": {
+    "left_cards": 431,
+    "right_cards": 425,
+    "matched_pairs": 340,
+    "left_unmatched": 91,
+    "right_unmatched": 85
+  },
+  "OCR_EXPERIMENT_FACILITIES": [
+    "F1",
+    "F2",
+    "F3",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16"
+  ],
+  "method": "Manual, reciprocal unique HCC/UID (columns and coded filename evidence), identifier plus DOB, HCC suffix plus DOB. No matching across district/facility. Ambiguous ties remain unresolved.",
+  "inputs": [
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\OCR\\gpt41_mini\\visits.csv",
+      "sha256": "68086c336f1f359d1d11174b8c11e8c77161d51fd083e5de3508bd121f065524"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_1\\visits.csv",
+      "sha256": "0ec6e24b4d153f25544d719ffd27a31af4c55d8ac464cd7537ac704b885e4f77"
+    }
+  ],
+  "overrides_sha256": "649755d40da20dc28d408baafe22b8b03de6389093ab1a5a2204eaf5e3700b8e",
+  "filename_hints_sha256": "ef023ee273158b73e6ebd7d93d42bda3ec5df2c01afa180e7da1f1a510adfb07"
+}

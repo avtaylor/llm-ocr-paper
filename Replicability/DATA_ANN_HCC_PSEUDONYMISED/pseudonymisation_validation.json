@@ -1,0 +1,9 @@
+{
+  "csv_files": 3737,
+  "hcc_cells_replaced": 64647,
+  "distinct_hcc_keys": 929,
+  "source_unchanged": true,
+  "other_clinical_values_preserved": true,
+  "hcc_normalized_equality_preserved": true,
+  "suffix_equality_preserved": true
+}

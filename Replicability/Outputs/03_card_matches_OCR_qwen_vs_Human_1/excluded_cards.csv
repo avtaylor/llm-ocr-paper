@@ -1,0 +1,4 @@
+﻿side,source_card_id,district_code,facility_code,reason
+left,F16_OCR_0034,D4,F16,user_confirmed_duplicate
+right,F7_H1_0025,D2,F7,user_confirmed_duplicate
+right,F6_H1_0025,D2,F6,user_confirmed_absent_from_other_entry

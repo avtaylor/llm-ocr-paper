@@ -1,0 +1,42 @@
+﻿field,field_type
+abdominal_exam,Categorical
+age_at_enrolment,Enrolment age and NVP duration
+age_months,Age at visit
+art_start_date,Other dates
+birth_cohort_month,Birth cohort
+birth_cohort_year,Birth cohort
+birth_date,Other dates
+birth_weight_kg,Anthropometrics
+breastfeeding,Categorical
+cpt,CPT
+follow_up,Categorical
+guardian_relation,Categorical
+hcc_reg_no,Identifiers
+height_cm,Anthropometrics
+hiv_infection,Categorical
+hiv_test_0_date_received,HIV testing dates
+hiv_test_0_result,Categorical
+hiv_test_0_sample_date,HIV testing dates
+hiv_test_0_type,Categorical
+hiv_test_1_date_received,HIV testing dates
+hiv_test_1_result,Categorical
+hiv_test_1_sample_date,HIV testing dates
+hiv_test_1_type,Categorical
+hiv_test_2_date_received,HIV testing dates
+hiv_test_2_result,Categorical
+hiv_test_2_sample_date,HIV testing dates
+hiv_test_2_type,Categorical
+hiv_testing,Categorical
+mother_status,Categorical
+mother_status_enrolment,Categorical
+muac_cm,Anthropometrics
+next_appointment_date,Next appointment date
+nvp_duration,Enrolment age and NVP duration
+nvp_start_date,NVP start (legacy field)
+sex,Categorical
+stopped_ge6m,Categorical
+stopped_lt6m,Categorical
+transfer_in_date,Other dates
+visit_date,Visit date
+wasting_malnutrition,Categorical
+weight_kg,Anthropometrics

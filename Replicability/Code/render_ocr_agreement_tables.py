@@ -22,7 +22,7 @@ def num(value):
     return f'{0.0 if abs(number)<0.0005 else number:.3f}'
 
 def main(folder=None,reference='Human_1'):
-    folder=folder or ROOT/'OUTPUTS/selected_agreement/05_ocr_accuracy_vs_Human_1'
+    folder=folder or ROOT/'OUTPUTS/hcc_pseudonymised_agreement/05_ocr_accuracy_vs_Human_1'
     def read(name):
         with (folder/(name+'.csv')).open(encoding='utf-8-sig',newline='') as f: return list(csv.DictReader(f))
     summary=read('accuracy_summary')

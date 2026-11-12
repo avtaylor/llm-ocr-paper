@@ -1,0 +1,5 @@
+﻿district_code,left_dataset,right_dataset,left_cards,right_cards,matched_pairs,left_unmatched,right_unmatched
+D1,OCR_gpt4o_mini,Human_2,99,98,65,34,33
+D2,OCR_gpt4o_mini,Human_2,120,118,70,50,48
+D3,OCR_gpt4o_mini,Human_2,114,113,93,21,20
+D4,OCR_gpt4o_mini,Human_2,98,98,61,37,37

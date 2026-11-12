@@ -1,0 +1,11 @@
+﻿ocr_dataset,human_dataset,left_cards,right_cards,matched_pairs,left_unmatched,right_unmatched
+OCR_gpt41_mini,Human_1,431,425,340,91,85
+OCR_gpt41_mini,Human_2,431,427,333,98,94
+OCR_gpt4o_mini,Human_1,431,425,290,141,135
+OCR_gpt4o_mini,Human_2,431,427,289,142,138
+OCR_gpt56_terra,Human_1,431,425,352,79,73
+OCR_gpt56_terra,Human_2,431,427,347,84,80
+OCR_nemotron,Human_1,419,425,318,101,107
+OCR_nemotron,Human_2,419,427,315,104,112
+OCR_qwen,Human_1,431,425,345,86,80
+OCR_qwen,Human_2,431,427,343,88,84

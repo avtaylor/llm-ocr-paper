@@ -1,0 +1,48 @@
+{
+  "left": "OCR_gpt56_terra",
+  "right": "Human_1",
+  "OCR_EXPERIMENT_FACILITIES": [
+    "F1",
+    "F2",
+    "F3",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16"
+  ],
+  "method": "Previously established one-to-one card correspondences, retained by stable IDs; current data used for scoring. Restrict to shared H1-H2 pairs with the same OCR scan.",
+  "inputs": [
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\OCR\\gpt56_terra\\visits.csv",
+      "sha256": "41817325ffd39e0726772e7a275f8446d6e9607e07b87243d1a4f549b87c9a13"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_1\\visits.csv",
+      "sha256": "0ec6e24b4d153f25544d719ffd27a31af4c55d8ac464cd7537ac704b885e4f77"
+    }
+  ],
+  "overrides_sha256": "649755d40da20dc28d408baafe22b8b03de6389093ab1a5a2204eaf5e3700b8e",
+  "filename_hints_sha256": "ef023ee273158b73e6ebd7d93d42bda3ec5df2c01afa180e7da1f1a510adfb07",
+  "scan_crosswalk": {
+    "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\established_scan_links.csv",
+    "sha256": "423957b4b82d54a9fd4dafdb8334559410d648469576119462d59829b74a0b8e"
+  },
+  "matched_card_pairs_sha256": "4ef96849befec4cc73a7406eb8c40c7c8e9f9a293768e3e0704168662f23b144",
+  "established_correspondences": {
+    "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\established_card_pairs.csv",
+    "sha256": "cc8f49bbd5e5163334f429918835bacdc9a54abb13e38c0d78452979dd95cc06"
+  },
+  "full_scan_assisted_pairs": 414,
+  "baseline_pairs_in_shared_cohort": 344,
+  "added_scan_pairs_in_shared_cohort": 53,
+  "shared_human_pairs": 410,
+  "shared_human_pairs_sha256": "c979ed8c3ce496f124be17cf4d0120e6fdd3de42098c89820d3d0a6164ff387e",
+  "matched_pairs": 397
+}

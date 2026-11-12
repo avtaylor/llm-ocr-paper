@@ -22,8 +22,8 @@ def rates(row):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--input',type=Path,default=ROOT/'OUTPUTS/selected_agreement/05_ocr_accuracy_vs_Human_1')
-    p.add_argument('--output',type=Path,default=ROOT/'OUTPUTS/selected_agreement/06_ocr_false_positives_vs_Human_1')
+    p.add_argument('--input',type=Path,default=ROOT/'OUTPUTS/hcc_pseudonymised_agreement/05_ocr_accuracy_vs_Human_1')
+    p.add_argument('--output',type=Path,default=ROOT/'OUTPUTS/hcc_pseudonymised_agreement/06_ocr_false_positives_vs_Human_1')
     args=p.parse_args()
     args.output.mkdir(parents=True,exist_ok=True)
     for source,name,byfield in [('accuracy_summary.csv','false_positive_rates',False),('all_field_accuracy.csv','field_false_positive_rates',True)]:

@@ -1,0 +1,5 @@
+# OCR agreement against Human_2
+
+All five selected models use the same analyse_accuracy.py policy, restricted to the 14 comparison facilities and saved one-to-one card matches. Each CSV is available combined and separately at aggregate, district and facility levels. Rates pool reference-populated cells; do not average facility percentages. Kappa is categorical only and uses both-populated pairs. Date/numeric tolerances use valid paired values; reference-populated alternatives are also provided. Invalid and extreme recorded values are retained in exact agreement and flagged separately.
+
+Matched card/visit coverage and eligible shared fields differ between models. These are conditional agreement rates on the matched subset, not a strictly paired model ranking or end-to-end extraction performance. Birth date and visit age/date contribute to matching, so sensitivity reports are included. Full disagreements, excluded fields, largest errors and visit coverage are in the individual model report folders.

@@ -1,0 +1,2058 @@
+{
+  "reference": "Human_2",
+  "candidate": "OCR_gpt56_terra",
+  "eligible_fields": [
+    "abdominal_exam",
+    "age_at_enrolment",
+    "age_months",
+    "art_reg_no",
+    "art_start_date",
+    "birth_cohort_month",
+    "birth_cohort_year",
+    "birth_date",
+    "birth_weight_kg",
+    "breastfeeding",
+    "cpt",
+    "follow_up",
+    "guardian_relation",
+    "hcc_reg_no",
+    "height_cm",
+    "hiv_infection",
+    "hiv_test_0_date_received",
+    "hiv_test_0_result",
+    "hiv_test_0_sample_date",
+    "hiv_test_0_sample_id",
+    "hiv_test_0_type",
+    "hiv_test_1_date_received",
+    "hiv_test_1_result",
+    "hiv_test_1_sample_date",
+    "hiv_test_1_type",
+    "hiv_test_2_date_received",
+    "hiv_test_2_result",
+    "hiv_test_2_sample_date",
+    "hiv_test_2_type",
+    "hiv_testing",
+    "mother_status",
+    "mother_status_enrolment",
+    "muac_cm",
+    "next_appointment_date",
+    "nvp_duration",
+    "nvp_start_date",
+    "sex",
+    "stopped_ge6m",
+    "stopped_lt6m",
+    "transfer_in_date",
+    "visit_date",
+    "wasting_malnutrition",
+    "weight_kg"
+  ],
+  "excluded_fields": [
+    "agreed_to_fup",
+    "agrees_to_fup",
+    "child_age",
+    "child_name",
+    "guardian_name",
+    "guardian_phone",
+    "hiv_test_1_sample_id",
+    "hiv_test_2_sample_id",
+    "hiv_test_3_date_received",
+    "hiv_test_3_result",
+    "hiv_test_3_sample_date",
+    "hiv_test_3_sample_id",
+    "hiv_test_3_type",
+    "physical_address",
+    "unique_child_id"
+  ],
+  "matched_cards": 347,
+  "OCR_EXPERIMENT_FACILITIES": [
+    "F1",
+    "F2",
+    "F3",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16"
+  ],
+  "input_hashes": [
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\OCR\\gpt56_terra\\visits.csv",
+      "sha256": "41817325ffd39e0726772e7a275f8446d6e9607e07b87243d1a4f549b87c9a13"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0001_visits_export.csv",
+      "sha256": "9f22320aee40dee86a459da56c3d94e4259306b91bfedf08b19db7b1c6f4e92a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0002_visits_export.csv",
+      "sha256": "3bc503d1d13e4ac5b4a82d921304cf3fb886ab8e5d011efad214d888fcc8468b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0003_visits_export.csv",
+      "sha256": "4f0506ceaeec25615e7b86535a12fe6038cef8a43c5d77d251cf22966c83ba42"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0004_visits_export.csv",
+      "sha256": "01da509f81bbcf596561827bffe9b951be05446fdd4d3193b8115f5c35e79741"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0005_visits_export.csv",
+      "sha256": "e4f99c7ba1690629d5cb5cca8cfdad8d2e34337c590fa55e1a39fb0b3fa7f361"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0006_visits_export.csv",
+      "sha256": "091fdd96280217e7948345110a605ee0249e465f157edb28b4d7aa2a770b51b3"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0007_visits_export.csv",
+      "sha256": "5c9e846a8be63900d765b47f93d41fd8cfe23285a28dd1ed3c851d68f8cfe984"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0008_visits_export.csv",
+      "sha256": "fb4ece4d132ba7de0b78340b21f27ec9c2cebf08daf826b9793d975d4204e639"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0009_visits_export.csv",
+      "sha256": "091c4d9ed0a3a8a772c86a597b6084f8045466c5f90d15466c40f64c977b2797"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0010_visits_export.csv",
+      "sha256": "52c5dfbda8f5a33503e7c0b164568625667813ed3d4323618aa0cfa9118d3fd9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0011_visits_export.csv",
+      "sha256": "ea7ba36fa9256693ac75f998b73ca7d5239ae527c5f2cec2a5a52de2a357bb41"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0012_visits_export.csv",
+      "sha256": "e2daa4b44748f28469771267970260b2f3485361e43994576652cc43c919684f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0013_visits_export.csv",
+      "sha256": "5da47e602a8425e207cda71481db3c6ccc8ee57244aa558787199dc72fe909a4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0014_visits_export.csv",
+      "sha256": "de1d6ec47b31cf6944dce3c07332a6c755f69a0dd2bcc8764c2f3cb7cf2f623f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0015_visits_export.csv",
+      "sha256": "04620f6e1988716f125b59c699f6a795f8ad926dffbc6993801f8454cfdaa987"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0016_visits_export.csv",
+      "sha256": "0943a61b4750926b45f3c91ec2071e70012f34ce2ba413fedc3713300ab4905b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0017_visits_export.csv",
+      "sha256": "dbd5d9e14bf9b274f473579b9a41686de6131c1d02af35189a75f27906ab4d16"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0018_visits_export.csv",
+      "sha256": "6970913ed790679de384cc1fa910781dad78e9f57d90de42468effd476f0263c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0019_visits_export.csv",
+      "sha256": "3c8f09208a6fb279d91def3bcf88aefcc78499b7963916289751f536f5a278f0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0020_visits_export.csv",
+      "sha256": "4e365afee56598869c78e258778e44e1caf49b0ed8814a41358d6f0753bc82d6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0021_visits_export.csv",
+      "sha256": "31b3fc111147ce156daa335c3388c9b5fb540dee49c5ed4293e72ce72179f2f9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0022_visits_export.csv",
+      "sha256": "1587b08437aa224e8c5d3bafe315091b65606484092239d78841145a88589c04"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0023_visits_export.csv",
+      "sha256": "c772f31e912fc7c0b64929999a5d2879d61acc3329d3205264d4c1c36f9282ba"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0024_visits_export.csv",
+      "sha256": "37cffee800eccce3d981df48d989ea9a8ff4569c4611d7bd543e803a536a6510"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0025_visits_export.csv",
+      "sha256": "16ae2afd5e4ab0906d7e6b07b51910bc5851eb89bd22d96485b1eb456205571d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0026_visits_export.csv",
+      "sha256": "463f1dd3223eb8c3e666b198b1d7a0507ab8f40d7744f9a3b0597a9f1ce29bcf"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0027_visits_export.csv",
+      "sha256": "32ad331f35d774ca322aed96095e8cfc0cb056c0edc3a62dcafb4ed56425e978"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0028_visits_export.csv",
+      "sha256": "7b410c68073f0fe9567e2df58391f9a0e26ab689033e3b20f86b6f53d6653eff"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0029_visits_export.csv",
+      "sha256": "c137817b1888c39b8eae7f53ecadcadf3d2a1af4bd361da81ae0b166bcd21c7c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0030_visits_export.csv",
+      "sha256": "08421d587a6f0527e10ed573d2100395fdab31df6cfa6c4f6261f62ab2e6290e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F1\\F1_H2_0031_visits_export.csv",
+      "sha256": "e3c53a8ab752861c65eb89a365676772cf489c93393b6f444f6687f89f6db3cd"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0001_visits_export.csv",
+      "sha256": "3136c9a1c8053b12bf9a32c41701e31ec97607d60ccf592fabc6401f34e9e0e2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0002_visits_export.csv",
+      "sha256": "4ff97fc98a0695e79ebc626f8b97719c2899b77eae6812423e2912de3d9ac16e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0003_visits_export.csv",
+      "sha256": "44dbbbe30dec5106cddccc47a0d26081b2593f6397a95667661b1f1310a0ad46"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0004_visits_export.csv",
+      "sha256": "c37e7431aa14f039bc0f15ee96024baf86808b66cc46a0c9e390d7a456d8fd2d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0005_visits_export.csv",
+      "sha256": "8e34f7c45bf082f5872668aab3f23837cf8eedb8587c1af5d9e862291d381256"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0006_visits_export.csv",
+      "sha256": "5bd969046c0482e0fbcfc5d84bb8c53f3f9e5b273c4f8cfc64c1e25f6873e1c8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0007_visits_export.csv",
+      "sha256": "102683fcc2706510490fbfed272f1fe8ac13fa4de13f7bcbd789fd9b1103430c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0008_visits_export.csv",
+      "sha256": "5e350513c5e0850d7a36b04d0f6dc28364fb87358911049236bbb42c37a51696"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0009_visits_export.csv",
+      "sha256": "ea1cc580e0aae99d10285134e3e384835e818a405c1d68f45118068be2b4c680"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0010_visits_export.csv",
+      "sha256": "fbfb4e5b7bd6131cf319c983f4ca1428093b7f7be93e1489dd03d0a7c43bfb8d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0011_visits_export.csv",
+      "sha256": "da179e69165357b23c159e83d7f57ec255304382d27b2bab7bd80244c88e5597"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0012_visits_export.csv",
+      "sha256": "95146a18d0f1e5d172246a8d0c5bcd10778ebb23118cd5f23b684120119d91dc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0013_visits_export.csv",
+      "sha256": "4c641441080ceaa2f9f69c0f3f5e32891befeff224983ff07945a852bab04148"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0014_visits_export.csv",
+      "sha256": "c16e27c51c67e7486d48e24574c9a18acaf96d014738ecfdb05ba3776906ad22"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0015_visits_export.csv",
+      "sha256": "8b90e8eaf329e08b0d6d036de0583d2d6216d20298148af9ddd10d0fe69b4b60"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0016_visits_export.csv",
+      "sha256": "36dfca082f184d393a60a87d9d83a045589c780492e667fa7d0ce5efbe6ec729"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0017_visits_export.csv",
+      "sha256": "0e21894e4c6a5ed280c396647a23fbcfaf4596e5abcecf9e485305f0c5237021"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0018_visits_export.csv",
+      "sha256": "9ccd9941fdd60d429b04327ec738fd4c38caf031933d4fb3cfda10bd25e4a29d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0019_visits_export.csv",
+      "sha256": "9c3d9bc4b1532394254a6e895f3e64c806db873b07ac7d76da046fd80b399be3"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0020_visits_export.csv",
+      "sha256": "774e542b5fcf609823286fad671615a8a8faed930eb6c0d343c6f9702046fea0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0021_visits_export.csv",
+      "sha256": "73077f9e79da7a1f973ba5ef92d2aaf6f705a5ac555a4f3938d153d6d3a4e606"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0022_visits_export.csv",
+      "sha256": "b14ccd7f815320014a5a58f5d7c513d5b76dc60da9d4c08dfe2d92fef61ecc31"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0023_visits_export.csv",
+      "sha256": "04046782906cce290c85922ea2cf3739cc56f2381e09d5c06f6855a969371744"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0024_visits_export.csv",
+      "sha256": "a6d75d48d8d9e2dbeb4a7a4a72bba1204bbbc35db145cbb430a66eb933472aa7"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0025_visits_export.csv",
+      "sha256": "b16f3fed2f0b6582005f9217c33e327199a3518b302d333323085a1ba0405549"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0026_visits_export.csv",
+      "sha256": "43e9c29e28d25a834eb56baad742b0bf3a955d7d395f6701dff0f204573f32bd"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0027_visits_export.csv",
+      "sha256": "a3a9ac9517a7825a2c11af6b478f664a0abdc76c4bb33b442410174bb0f73647"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0028_visits_export.csv",
+      "sha256": "64ff68c882f7e26f3691736837d16946bb89223dc36fdd8c03223e1607d4eccf"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0029_visits_export.csv",
+      "sha256": "f1e4386ed2c3274d407433416b8ac14ac02cf778f43a0b007edb17d877abbb28"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0030_visits_export.csv",
+      "sha256": "296b87576b6d8566ce1434088c055c876589ba24580334c35bbf180b6832edcc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F10\\F10_H2_0031_visits_export.csv",
+      "sha256": "d8002731183e83f7b39339844db6bc00efc9b44fec6bad796edbb74b4c3c03eb"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0001_visits_export.csv",
+      "sha256": "eee040a82845991d5bc23da5845e27fe788a639aa3ec9d340ed08abcfb06aa13"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0002_visits_export.csv",
+      "sha256": "df07f561fd6bab982f2aa484fb8f11e8106fa85276410101ac23bc35a4ca6396"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0003_visits_export.csv",
+      "sha256": "4e9ac59eb222d9c9dba8e536cbc482de151645618d53cf8bc1291df3450c6443"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0004_visits_export.csv",
+      "sha256": "8761d8a593cddb676232788674b1b819a813c90fec8a66298f111e03b3668a97"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0005_visits_export.csv",
+      "sha256": "64cff799ab7ff7dddd57399f924c2e05b4429b972eacd2d17cc63cf3498ac373"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0006_visits_export.csv",
+      "sha256": "f3d85988cd66e1442fe051730ff80a7be5bd48b8df989e4808b10a823e744512"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0007_visits_export.csv",
+      "sha256": "5cf096d8d5f8084979cce80d672301e46cbf68c76a25b9e18620aa3dd25f3f13"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0008_visits_export.csv",
+      "sha256": "3eee9d513cd83e20a82f974217afea17f124de8fc48a99f9c1ab2606c96031f9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0009_visits_export.csv",
+      "sha256": "4a405805b6a1b0d219b1b800e90d5c4f48a85427fa5edb3db9179df13080453b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0010_visits_export.csv",
+      "sha256": "ccac495ab8442ecd038a30d384ad755b70fa8856b0020434f7987f5d50f0f82c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0011_visits_export.csv",
+      "sha256": "3f899d3129a1bcb2e8e18fcf95a3a6c5df8379576dc17f4f69b543d8d06d0e6a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0012_visits_export.csv",
+      "sha256": "8fb75dc9f6189abc431254c7576c62f00e248b8f39f46f9bad542b50f57beed4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0013_visits_export.csv",
+      "sha256": "5ce9e793f67616d2ff81212740940ed64df2ae8e37bd560fb580cd4f960a4d02"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0014_visits_export.csv",
+      "sha256": "1e41589cbc099459621bf4c71af5772499f9310ec0d0c62c70c0bad8ec096b16"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0015_visits_export.csv",
+      "sha256": "930e0c7cc9aa85f52c5fbcbbe1ee94ecdf08cae0dfed0e52ae623bc53bada744"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0016_visits_export.csv",
+      "sha256": "f19e6537674ae9ea54b30b49057a5277a18cd6b21b9691f241181fcf868059fc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0017_visits_export.csv",
+      "sha256": "54acc6db22888012e973479aa9370fb36c2e5485e5754086904c0c278e054089"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0018_visits_export.csv",
+      "sha256": "6397c02b469b3a2751a562fcfc7b8dbdf9fd8a1407a266a1285f9a69c4d9adcf"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0019_visits_export.csv",
+      "sha256": "c00da02fc5841646e4211715d7cd7dd35006dd1686736d95608cbfeaa107ac1c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0020_visits_export.csv",
+      "sha256": "2abbdef7e508c2f6993f57d8f94873ba83d12bbe9d0c1c1af84b1067608fc898"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0021_visits_export.csv",
+      "sha256": "c052c2e305960ba0b5a05eca0e6fb3ceb29a5166b3f4e2de51d376df1058e285"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F11\\F11_H2_0022_visits_export.csv",
+      "sha256": "55c1875c2f582087576bb177d301e5f19fa65a59d7d615ae120b5b3d5e7a8ff0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0001_visits_export.csv",
+      "sha256": "7ac112f976e77d90c943134040aecf6bca4de222d3d196f34ae1028447ccb32c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0002_visits_export.csv",
+      "sha256": "3ae1952edc999f295f728de625cd9f6320578e3da6bd06ee1679fe03463d588d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0003_visits_export.csv",
+      "sha256": "c38dd4bbacf43573151b1f5a222dac62ab0e3c3474124f0306226f571b0c4f15"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0004_visits_export.csv",
+      "sha256": "47857ccea692ddfc80c6abb513deb81dfcc0356f22ee7629a87d9bb4a48dcc70"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0005_visits_export.csv",
+      "sha256": "e37a539641259073e48b5c35c3e4795378641cb414cc7a04fd0f581d16915a76"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0006_visits_export.csv",
+      "sha256": "0be8727cd9df1c387694294a6a62428c85c1aa30b1644f4568ae01c83d3b5f3f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0007_visits_export.csv",
+      "sha256": "57cae1930c7a24f4d16b862e32848dd0da53f7c2edbf58b8552c466f006d4d59"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0008_visits_export.csv",
+      "sha256": "266b9c52e5ba27e8a804ca0394bb0d628b41e04c10705660591afb2793b08728"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0009_visits_export.csv",
+      "sha256": "ac6492b915f2fd19f320b54bf91c0b74d6b96a8d34c8de6c1c8151dc247da729"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0010_visits_export.csv",
+      "sha256": "d842dc5547853f3d86e47fbd8c017448d7cbcd9c024bddf5aa1d4c192de78780"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0011_visits_export.csv",
+      "sha256": "7d835a93e598f65ed19fd9f86613ef07ba49019fd8e1b3c6347bb5c8d6cd5cae"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0012_visits_export.csv",
+      "sha256": "c1ab0d91c5e3b79f4fcc045f1609cde2da665dfee969c29878d7452f75470031"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0013_visits_export.csv",
+      "sha256": "d1d2aab253a8e2af6e9b475d902d8d50e6a954253615ac75ce754242b07bd3a6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0014_visits_export.csv",
+      "sha256": "9673789a57ff4ff977849b2dcfb3f9ab382be713acf69ab8d6154d22748c64b3"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0015_visits_export.csv",
+      "sha256": "52ce5d32a94369c239dea786491a94cbf139016daad04606040307db9611f493"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0016_visits_export.csv",
+      "sha256": "0d5c35b8ff496181c1bee02c7a1c2416fb2b70e0f96a6a4313007374adeb8dad"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0017_visits_export.csv",
+      "sha256": "56b8dd5740ef4a67b88b5517dadaa642e10f30e70d4d6f9055364e8d3d0d2c2d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0018_visits_export.csv",
+      "sha256": "577565b4d61dd5a31a002c4de4afc3517de89569875bc3c6af9899de8b6f9af0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0019_visits_export.csv",
+      "sha256": "bedc63e802d57a71b8541695eaded1fe9c6c3aa46ea9d9804df299b41e7ea616"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0020_visits_export.csv",
+      "sha256": "3bf6a398acc77ed6d9b9d3f178c7bd042331f24d7ae4eab1160b16217f5afb43"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0021_visits_export.csv",
+      "sha256": "2f158d0a1bc88c372fd0f3d0b97a615000f37d3c816f132ddf7aa0bb754738a0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0022_visits_export.csv",
+      "sha256": "a3422975d2c413c4ed36557ded8eed1019fd336fd1e9c802e4f0c12d7a3e756d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0023_visits_export.csv",
+      "sha256": "39e7ff16a652e3c59e8158ed470740ee0b2627edeca3aeab4fb65a925151ced2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0024_visits_export.csv",
+      "sha256": "4a8126afaef646e00daa8f150a7754411d81bd5eef8985c1b5a97aea390c60cf"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0025_visits_export.csv",
+      "sha256": "317822cf4fb76782b510d599f872a25eaec3c455f3190d1ab2be548085565e14"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0026_visits_export.csv",
+      "sha256": "fb11bd33fa2d6a4cc2401d547f9685c110fba73bfeca752dea511ce5e0a8b9e2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0027_visits_export.csv",
+      "sha256": "317dce8c871103d679e56a30ca1edab7c67afa38d6a75d865c173004d8e6fbcc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0028_visits_export.csv",
+      "sha256": "7e78eee98cc7a8a6a1c5b83e4c7c38eab40804afdcfbc92d282a978a9d693542"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F12\\F12_H2_0029_visits_export.csv",
+      "sha256": "74afb6c602b796e4291dad842b684a1af3e31628aca47d9c82f5ad1e38dfb96d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0001_visits_export.csv",
+      "sha256": "34662a2cabdf0e02f7c43ec21370c68848080ec17461f7869ea2001b71898a45"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0002_visits_export.csv",
+      "sha256": "a2d587de4d4cf7ca85eefc28f4ebb2096e61a8dc79bfab3484607a7b479a18ed"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0003_visits_export.csv",
+      "sha256": "f90897598772a5715170366d3122f1c91f0443927cdccf0b13df2848e0b1b623"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0004_visits_export.csv",
+      "sha256": "c50e6a5ecf7887293886353ea82f8ccfba7939e3d7e08477b556ac478ef57622"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0005_visits_export.csv",
+      "sha256": "a9733e2fe99b797a3d6ec2c0689e366a8e36d86760d849b94e2a4f95a650c449"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0006_visits_export.csv",
+      "sha256": "02c95ef58cfa78dfa7e1ffdad4056751ca39191396b6f6b526fabb28149f43d6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0007_visits_export.csv",
+      "sha256": "a6492c63e52ca0b12a6e9ebc6f264afa6bbbeab4180ce6a019a3bd32c5a52dce"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0008_visits_export.csv",
+      "sha256": "e33c2ebe8d17266f5f96ea69869e4bc687b74d91bd266054dcba9d0f3357c8eb"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0009_visits_export.csv",
+      "sha256": "4f55cdfe9778b6d4db9777c0feb7e5ececa8a40deeed700bb33c3870383c27fd"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0010_visits_export.csv",
+      "sha256": "e0dd50d27927743b40e7638224f88f1c67d820d3f4b8550e37cdf14add76692b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0011_visits_export.csv",
+      "sha256": "4188970630552210ef78aeecf574d0dae7d4f1916ce73893fbb4589938aa05f4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0012_visits_export.csv",
+      "sha256": "052a346c5f31bd57e0570c3c08ba982165dd94ff4e75fe24d1f4f4e3a6b4cfb2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0013_visits_export.csv",
+      "sha256": "c9ff6694e2971b78c0e21d58924d8c142832ff6a95e8b568ecf713c2d06c938b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0014_visits_export.csv",
+      "sha256": "ef8657f20675a6e6af4ce11732f1b496f75d71c1231ca5b013ce7d78e279c90d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0015_visits_export.csv",
+      "sha256": "547430ca8502f01f27767946453793451dff28342251dfb24e321f43d65f814e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0016_visits_export.csv",
+      "sha256": "43dd62666609835bb5479e8f4f28132e88547308f7df68525381d527e2fb281c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0017_visits_export.csv",
+      "sha256": "0bff96b52413bbd6c3229484399a382c7105cf5af81facc2a6d946a2705bf065"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0018_visits_export.csv",
+      "sha256": "5aa93a00095b5760d426afd108fa4f9c7a15b6371a06f4e00bf2e5662ce6f615"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0019_visits_export.csv",
+      "sha256": "fc6cdd931235455400a352175b636e6aaf4ce0c0f617e7324f6533f2e6f446b0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0020_visits_export.csv",
+      "sha256": "c96d63f4b7cf9188e55ffd9960a9300c69e822edce03983c6b2a335f16493ec8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0021_visits_export.csv",
+      "sha256": "15a647dd63d58bfc432d2c2e606dd9fe8effa3d1636bfa3ff1a9bb251528c725"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0022_visits_export.csv",
+      "sha256": "065ee4de65b904c64743c51ef5900a74b7b416e925babb0290ab1ebb4c6cb141"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0023_visits_export.csv",
+      "sha256": "2af019fa4f197a3a557037ae9658a41bfadb2c55a11b42dbfa2ef870971c7945"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0024_visits_export.csv",
+      "sha256": "01421432699c743d7403a53cf46a680d88676786de0e1ed59bd9837a9dc4f35c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0025_visits_export.csv",
+      "sha256": "d99d3b426fd80fa2f74b759633b511295e2fce23e57e8c6ec974722a86a1e0b0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0026_visits_export.csv",
+      "sha256": "d5c8e8e3407b073e2dfea56236f13cecd2e88b3b4af191a079889d6d64877de8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0027_visits_export.csv",
+      "sha256": "9d5712da7a1ca3dc1ebad54d974baf965b464f4bb7f13d368abf4915a7b801c1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0028_visits_export.csv",
+      "sha256": "5ef523deb1d912d329cfb62ce78b1d57e2fb6e458067db9d4d3b7bad21faaaee"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0029_visits_export.csv",
+      "sha256": "67e97f943bb17543c2b4ef3018689a98bffd01a361e2b4d29962373ad70e3b77"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F13\\F13_H2_0030_visits_export.csv",
+      "sha256": "26a33e737869a9def2c22bda05419674333d52d4e55bf79dc39688054ef05f9c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0001_visits_export.csv",
+      "sha256": "3e7b701a355c6c1fee7bc407f2666579206b12e0a9e8772eee553e24baa8d6f9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0002_visits_export.csv",
+      "sha256": "45368777155b91ec88f9f09a5b8fcaa5d58a7b7031a4ff5ca1f6ed3e87ab3abd"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0003_visits_export.csv",
+      "sha256": "56e56c06808805026af7197b4890cae4e2545a6fda49f0c5659d3e5ec8dc46f2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0004_visits_export.csv",
+      "sha256": "ad394512fb51888af25ced64e9fc34787b31bc3d6be94f648718a2a977d0606c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0005_visits_export.csv",
+      "sha256": "5c27fbd69d9e85ec98d6a00a54eca856e658678f3b46b3a8f2e3e1660ba8ba59"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0006_visits_export.csv",
+      "sha256": "fb03b7e86af0f2dd7fc9fcdefb6baf97611a59174a170a8dc7d0d3b7cfc37d0f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0007_visits_export.csv",
+      "sha256": "1b6a71de23ec6d0c13d5140ebfaae07eba71bc9450e63c0dd27e1d5d462c945e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0008_visits_export.csv",
+      "sha256": "0ea763630da5347b41d1fcec8ea7b1789bc4d63f317f1f4ef7aa884426aaf4e0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0009_visits_export.csv",
+      "sha256": "56f7d12725055d26ac1600a58741e3b6043d56416ba51761aafdcd28e4ff730b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0010_visits_export.csv",
+      "sha256": "e9ebf603ed78e912cf9e40ca93e8dbeca5dc9c0b60a0fc4535c750ca3f1cfe89"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0011_visits_export.csv",
+      "sha256": "e197ff279ebe3b0fc355b0b5ff677fa9435159b892524339244fada9343a26b7"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0012_visits_export.csv",
+      "sha256": "f884354317e11967046f2ff755a1d5efbe9880a5ff8c60a00ef2a80301f750f8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0013_visits_export.csv",
+      "sha256": "6894421cd33f81b609c428fd3628dbb600334de0cb38c6e237ceccdd54563a57"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0014_visits_export.csv",
+      "sha256": "d83651ab6076deb7551c5c4fe93f69426bff9353242546101f325d5b1e8480b4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0015_visits_export.csv",
+      "sha256": "16976e0a2eb0c319ad0ea482e022543ff35bcb978a404310e2c73259e87fc662"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0016_visits_export.csv",
+      "sha256": "6e5261a3479293d60faa1a9ae110115f8a0e6067f3171ff77f7096904c9be885"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0017_visits_export.csv",
+      "sha256": "a58e7e90379be777977cf38edcb665501fc1c21ada7b02da1b8065ae364e67cf"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0018_visits_export.csv",
+      "sha256": "336784b1297b6c1bbca08b86e9405bdeec35e9e27c0bf64d224ef9c58186844e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0019_visits_export.csv",
+      "sha256": "085ddc9f123bed6a184a5076ab2959da7add4ebee6aade9f61c9f8b6cd6fc2b3"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0020_visits_export.csv",
+      "sha256": "5fde2c98e2a8e98200d2130712c2568e11be6b8811b193f27121bf900dbee215"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0021_visits_export.csv",
+      "sha256": "34d4d018ab4e7cf83e860465f9038c8f537885d8de8252f01d0b143bc11a4f3a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0022_visits_export.csv",
+      "sha256": "26a5f1dbef8c158793774d2cf2e57dfe3cbdb2ca45422fcd9eb40628d8aaa76f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0023_visits_export.csv",
+      "sha256": "d4bba2ae0e326b783d76ec4d7531b656ca8de5d9bb7a3375dc763a9f604b5e12"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0024_visits_export.csv",
+      "sha256": "2fef2369b762d2583515c9f3b223cbc2bd84a78838112e3a0ec997892d3c6bc6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0025_visits_export.csv",
+      "sha256": "84bd203877e932f1962f514287cadd79887cc0d34f49d0c928785bb9eea08999"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0026_visits_export.csv",
+      "sha256": "fa4fa9d30ef2addc088b573d000a017efe2b7bf2c345487a38b7d7da357829f5"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0027_visits_export.csv",
+      "sha256": "063f26a97f6b8d40c1fc98a93e03135976f72077d3db12a6b3869b421aaba750"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0028_visits_export.csv",
+      "sha256": "62bca12307c90693a567511726b167c851435764cf673f6840ae188a14981351"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0029_visits_export.csv",
+      "sha256": "11a9534ec01faf6a3389b156cf98e35a6e9cafe33dacd4b2b66076a77122c16f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0030_visits_export.csv",
+      "sha256": "1d00c0f7387e803a81cf2a479398fda133ec7637846f988387b8f5db11278159"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0031_visits_export.csv",
+      "sha256": "83b6189b08bf0b1d59b1dd976bdd0c7c8713830e6a82e8b1416afc9cf7e2bae3"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0032_visits_export.csv",
+      "sha256": "1b35756e8a2461bd1785bce600704c8a6fc4c85e214c6c59d2af21aba833d3bd"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0033_visits_export.csv",
+      "sha256": "646b3561070fad739c0f7e31e6b8e48c6ae2b7b9a17570cb260218485324202e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0034_visits_export.csv",
+      "sha256": "cb891bb6185ffd20e9c5a2421f4b9a630214e04c9666eb2ac7375c1e817d36e2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F14\\F14_H2_0035_visits_export.csv",
+      "sha256": "80db2c87c8a97673cd67946548f1662ce81707af4d3a2eb573a347786e95ef78"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0001_visits_export.csv",
+      "sha256": "f38cab5020afac93150934b37271840f6a31fcdbdb2730325676fa74e8966324"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0002_visits_export.csv",
+      "sha256": "46543115c1e84da94c9f8cc8b9ce345c8d03bdf079ce858bc026074cccda047b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0003_visits_export.csv",
+      "sha256": "39e71a80cf00cd70978cea205cd83091e7626c7c490b664d3b3e6c264793521d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0004_visits_export.csv",
+      "sha256": "7b21c4c37acbbd83e666c6d299d3235d09a665ee070332c1094a9e719f00ce8f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0005_visits_export.csv",
+      "sha256": "a78dfaf5a0915a9aa4655d248bfbf0c8d604a9e77ba851c8eaf6359c49584042"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0006_visits_export.csv",
+      "sha256": "b6b684ac0912da76413029b6350743eb6714c26179ca190da310e4d4d2baebdc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0007_visits_export.csv",
+      "sha256": "2a42e185c3d690d24cb3491c4907442bc2691840fbf4c9138cb2d903ccd9d4c8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0008_visits_export.csv",
+      "sha256": "cac1a7e5710661ed6984506fc02ca8a8ce2787819a487fb7a48d6fbef4228ced"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0009_visits_export.csv",
+      "sha256": "b25a76f7026453840476e8b633556bee31d0ae0a5864d86bfab99951eba63393"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0010_visits_export.csv",
+      "sha256": "3f78406deb37b26ae8c0dd3920f5fc8fc78e54c433ff5c396616dc2c0832d8b0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0011_visits_export.csv",
+      "sha256": "3ff026019369b3587fab101f30f0166cc18f53e64910b7c3b2d64d05d371e718"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0012_visits_export.csv",
+      "sha256": "968fa498be4993ef3af2c52a02ccac291e5ddce8a885b265165dd94013dc4187"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0013_visits_export.csv",
+      "sha256": "9559a2338b29b6cfe6b74abe610b5408ec782013b883d1b8ef93349cd1bc6a95"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0014_visits_export.csv",
+      "sha256": "eb01f857157d13f6dc034b38d44af7d17d0ab0d81b8e8073443a0f0db3353ae4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0015_visits_export.csv",
+      "sha256": "abce26fe7cf41e149e84d53afb2bc479af5a4a010c81eb0a61e79290a1b23090"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0016_visits_export.csv",
+      "sha256": "8355bba64bf53bd265306a3fb5eba499fff091a65a5bd6c71152218b1ab39d84"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0017_visits_export.csv",
+      "sha256": "ef3a9db914ccf29c2926b171a8a1aaf3935e77e919eb0f8cca481ffd7e2ebf52"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0018_visits_export.csv",
+      "sha256": "9398aa06407e08a94dfd271c32448448c3156197ee10a7cd120a5bc45676b132"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0019_visits_export.csv",
+      "sha256": "fcad060ea31af762c6e1cff01f67e8d6ccb00ac8d68220601b195bdc3e54bce1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0020_visits_export.csv",
+      "sha256": "17e7a94f1f0bcde8fbf522712618421cf8a1025a60f13b610426625860a445cf"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0021_visits_export.csv",
+      "sha256": "3cea52c01384ec9d77423e3e39d8fc3e14c660bf4b46a4ccc9c4bdb6b9335598"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0022_visits_export.csv",
+      "sha256": "4004dcdf22c07ee92ea5805d184accccc30e48d23b88dc0bc7a5cf5b1cccca54"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0023_visits_export.csv",
+      "sha256": "9ed37edfb07ec30def90229035f8884dce5858b8bf45b6e400ae812f542bd4e2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0024_visits_export.csv",
+      "sha256": "5a95d964a799f23c8e9b7421d7abed2d2078cafe023bed12a270c540e526d6d3"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0025_visits_export.csv",
+      "sha256": "1aee86efcf264577b92ce6428632f9f72c655bd52663755e97aace9b9adcce88"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0026_visits_export.csv",
+      "sha256": "86590f909147cac2169fc9490233af371e59818e210e6feed9141707a5838215"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0027_visits_export.csv",
+      "sha256": "28ed58e031619070b6c4d711c888ca33d596db1bd260a5192ae3ff401832ad57"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0028_visits_export.csv",
+      "sha256": "39ce1b79988b0c54c1d5315eb61d96c351b40753f3ee51d3c35c12f54c1b3951"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0029_visits_export.csv",
+      "sha256": "3707947841a2d024dd5ba702235d8a4574ee0e494bc1983386e1ba20b1d652c8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0030_visits_export.csv",
+      "sha256": "4be0b264b9c1c056860495267fc19e767e3610b10de044fa771e52b6ff5e42f9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0031_visits_export.csv",
+      "sha256": "26f99d04b781d183f5450743670d9f8d17e295235df1184dcb0804986561f471"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0032_visits_export.csv",
+      "sha256": "da721896e4a5ed08c82f3e24b7150f4e74d049c640be9e5e61f160b94fd7e9dc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F15\\F15_H2_0033_visits_export.csv",
+      "sha256": "9dc9084535170b1cdc6bb9ed0bfce78dea89116c16ae73495cfae44b1e7a0234"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0001_visits_export.csv",
+      "sha256": "040d96253503d2ff886deaa93d8258c545ad475842865fed26b339e108ce4074"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0002_visits_export.csv",
+      "sha256": "962ad187922c4026b43d94bc2d8202db415624a312b7cfc59c003b535d2d3593"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0003_visits_export.csv",
+      "sha256": "51d0af051d36b3d049e7e9a29033093f02f65ef744e049af44801e2a6561afd8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0004_visits_export.csv",
+      "sha256": "3985ccd65148d375857ab2cd25fc1885d1c38e9057aa7eb536d7955195aada6e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0005_visits_export.csv",
+      "sha256": "c8057a59f87fdf17db6ee64da565a7bf611591d5111597f1b7cd2ced24dc941d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0006_visits_export.csv",
+      "sha256": "212fedeab4302ecc23bcf30383dab5b4aba75899d0aabf0014ae572c30076c17"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0007_visits_export.csv",
+      "sha256": "076e1a5aa892b8a99d845308b32e8f5a42abdf8324f6cfab6d9f679a51b3e5da"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0008_visits_export.csv",
+      "sha256": "d015e157dc5c0a17b68f0a3f205cac72555482aac860c13ff9fa9754bf0f634c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0009_visits_export.csv",
+      "sha256": "a67aa42eafdf6e1db840c11158577fa2d2a47c4a6f18ac6510d5fb6c92dd5491"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0010_visits_export.csv",
+      "sha256": "ba960e49190f47333116af6d9bc29b75eb2beeced5f9ecd77491246cdaee38d6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0011_visits_export.csv",
+      "sha256": "a7ed077abca5f01e8bb237b620a0a13ddd4ef1a7cdf6fcee1f12aab2c642416d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0012_visits_export.csv",
+      "sha256": "89a968e51ac19a7b0ce77584257f2a54244eb445cfcf5a9deee58ceb09f31e6f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0013_visits_export.csv",
+      "sha256": "9b9217bf186e50fa4f0424afd7a57c228e1e427cc6f47cd9272c7e9e8a2fea83"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0014_visits_export.csv",
+      "sha256": "fb1f2243586027bcbc7405056b2ac2ec033b93834d554c86260de8238122b7b1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0015_visits_export.csv",
+      "sha256": "23ac1ce1750259e53036047ab89211d0a7c9c00c7a77b0721c6746b5453001fc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0016_visits_export.csv",
+      "sha256": "9e738d2443e1d64d61d052ea8cdd220f97dc6a0baffe78355b87b950ee33afd6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0017_visits_export.csv",
+      "sha256": "880c0d801ba4cb919b92d0cd78954abbb52501da7850c740d5ed588514834c33"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0018_visits_export.csv",
+      "sha256": "e3a9d3e629a92e88a145490617c7999a3fbe253b1cc003440579daafbeae886e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0019_visits_export.csv",
+      "sha256": "7ac34816e6523f40aaa4ead9c819025080bb4a2d400179ef8e99e8ac0330cd7a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0020_visits_export.csv",
+      "sha256": "009aa884eb6c56b0cfb16fba59345d188bd4146fafe3f141e48cb3e70215c616"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0021_visits_export.csv",
+      "sha256": "28a2a7395b5efdad682db0c6c281147954e9d77dd45fef9ecb2672fccd9853c2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0022_visits_export.csv",
+      "sha256": "cb7afc7ca83718ed37a8aba2db96360400cfd7f5ec787a3f7ac0884f79626347"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0023_visits_export.csv",
+      "sha256": "ad87afe28c771df46515f9a20c2c5f5f1ed8eb53a1501c22d6d1c3ad0d7e185b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0024_visits_export.csv",
+      "sha256": "f9823d967c57a28b8bebbdc4d7371de79db5e47c87deb29f17dea795b973b48a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0025_visits_export.csv",
+      "sha256": "acb31b7bd16cf536a6ddbe1de7898b62006d2dcfb50b5bb5413e1e465ae51022"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0026_visits_export.csv",
+      "sha256": "78d2e891dde0f12f1112b858bdde30dbd26a516133e5cdc42cda9afaa0cd48a5"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0027_visits_export.csv",
+      "sha256": "cb4b6cc45d05e2c5e6da9855c1985583b4fa1348b79d7a95cb93b32abe8eb07f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0028_visits_export.csv",
+      "sha256": "8c383a77980b598f8dde67d26e8bf825ce36eaba49d4888e6e784502ebf9c595"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0029_visits_export.csv",
+      "sha256": "1c8af561fc5913280de2f29822cd9fb9c6e5705864fcd8c8d933cb11f7c7901e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0030_visits_export.csv",
+      "sha256": "bc41a82ba6a0033eb880b5eead16940eb026f88da6ff7ac8bc01956ead245115"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0031_visits_export.csv",
+      "sha256": "6c2d6e180fd76be5d976563a1421822b3cd417bd688879847fcc9536118a5400"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0032_visits_export.csv",
+      "sha256": "77486e5b2749fbf1b35a85512f4a6338e1b6dd85f6575a6e2d64e2e64a34959c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0033_visits_export.csv",
+      "sha256": "1b2836941ab66f1588033566fcf6df85f251520ceaabbac1a0d1a18bfa1b0a1d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F16\\F16_H2_0034_visits_export.csv",
+      "sha256": "9731601318177b2f96716427d05057a841261da5ed7f693a0ea1c6d9586a4722"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0001_visits_export.csv",
+      "sha256": "f77b9ca309cdd8ee77a279a43146a3b706d4b5443bb637da518a9d80cb0622ee"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0002_visits_export.csv",
+      "sha256": "15bf2e3b3576e4d718b56638952d0f16807e579e03cc51c24844a6e9296caac4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0003_visits_export.csv",
+      "sha256": "3f18268fffb469d66c010770131a9c75584753b3556eb4659341148631355eba"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0004_visits_export.csv",
+      "sha256": "25f00b9bb7822c8e5905500d56ac6dfe7ffeb1a0d1574730d3c73a5f9a9347d6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0005_visits_export.csv",
+      "sha256": "65a54aee6a7a6540a90880c17a390e7b2c0778246c4eef98c3db8abcfdc2587d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0006_visits_export.csv",
+      "sha256": "a13c795b5739a8dd91d6319d900c6678dcff5919530572a9a67203c35586e0d2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0007_visits_export.csv",
+      "sha256": "443edd646a722d263220af701b5fde7f9f762f805b6c371ee9fc8fd1a33d2f7f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0008_visits_export.csv",
+      "sha256": "05569fac29fe01187442ebb2a4714fed635d46080cdb222f79dd7143d7cb74b6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0009_visits_export.csv",
+      "sha256": "aa5ec2bb848dc7701b6ac36debff9993544bb9e3a08573b2364358acbb5dd461"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0010_visits_export.csv",
+      "sha256": "27bd65f3cc1f1adf72e3558df2e01aade6318f0a77cfd5bb3d355c8e953346e7"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0011_visits_export.csv",
+      "sha256": "9aab65240b538ed27a2fee28a7ce78d320a30c1ed0e2e70a12160839630d85aa"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0012_visits_export.csv",
+      "sha256": "fc142b6f295bd6d8d67702037dd01153bd42c2a49659f1d31229d9ca2135429a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0013_visits_export.csv",
+      "sha256": "12840fd51e21f7cc66d4d91e21d43d383753ac49708da2192d6b1dc8402b9e19"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0014_visits_export.csv",
+      "sha256": "5255f7e6c400ce40b1bd100ab23064cba37ca076e0cfeac7c855de63706d2a48"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0015_visits_export.csv",
+      "sha256": "684ef63f692d23ec5a8f3eacdf0e25475253256b7657cbbffb1337371f362c52"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0016_visits_export.csv",
+      "sha256": "3c981e2ce58ca09f28bd2421ca942b1428abe33a51225c08f4e724fd15aa04fe"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0017_visits_export.csv",
+      "sha256": "baed42fe16f0ddd864183c752f4ccf1048d5f3f13133072d44cf91d958d31dee"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0018_visits_export.csv",
+      "sha256": "74c3d9d90c00a07e988ae0856e0c2bf83197a09baa4270aba4323ec416e0103e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0019_visits_export.csv",
+      "sha256": "a1ae164b7764f539cd3a143df69922d5af78787299e8204171d0eca4f6f661e1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0020_visits_export.csv",
+      "sha256": "1e84716180b5dd515202d08425cd65f26f501383b9482599ed57651b400b39e8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0021_visits_export.csv",
+      "sha256": "1c6754f043f2d1963a5d53dc8e38e72d951c0226ca58ed269fb3cb6db9bbb3eb"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0022_visits_export.csv",
+      "sha256": "b64e0ed5ed74836e49fc938ffcbb401116637b997842a3ef7959dc879772f8a1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0023_visits_export.csv",
+      "sha256": "63d16bd20afa608aa23eaf1a4be2ab67d126b11f7243933a85562222a42b1c8c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0024_visits_export.csv",
+      "sha256": "98495b2bd15f5d4602647d286989522967b8ffa93f0da3ea308d29645af2bd37"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0025_visits_export.csv",
+      "sha256": "25d38e1ddfbeadbc477bd22773f75addfcadb4184d68f5913764515db8730874"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0026_visits_export.csv",
+      "sha256": "f4df8ea1342d712868bd433bcdfc5c39d5153d3087ed6d4d69a3df73ad4f8b9b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0027_visits_export.csv",
+      "sha256": "bbdbd5d8eeb1e1c6de7814b825a79995da8e85699766f5208df9203c426bbca7"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0028_visits_export.csv",
+      "sha256": "827f70fe5635f15afe59553d1a07f13a1e004e8d0e0c77cf0a3080a283ad6ab4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0029_visits_export.csv",
+      "sha256": "f17ad9d73ae7ebdf4add498db7e54d902c7396f707add66fececab7419cf45e9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0030_visits_export.csv",
+      "sha256": "41554342cda85073fcec6d8a00207f9e224fa698e447ccf9fe397754ef0e26bf"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0031_visits_export.csv",
+      "sha256": "78695d3a00980bd91b33c6af127fd37e76889e42c43388dd565862c03e523163"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0032_visits_export.csv",
+      "sha256": "7df06288234eebcbce2411f4025321574a56d3c86be6292d055d6b733bd0de3c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0033_visits_export.csv",
+      "sha256": "0539604f3f8aff0f239511c240d81401b581b40235739d7869186e37758c5d22"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F2\\F2_H2_0034_visits_export.csv",
+      "sha256": "d4db7c210eb4d9e59d95df4de6063d354f25c374bd117d125707038b59926590"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0001_visits_export.csv",
+      "sha256": "c0280134b856f6e324ef63f0299bc1811e3c00783e8e11daca0522733fed281a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0002_visits_export.csv",
+      "sha256": "92ea9df6c27d71795896f220923a9867af86f3f5ef32c972581013a8d221ac95"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0003_visits_export.csv",
+      "sha256": "35eba521c39d7c1846deeaadf55031743a413d502946b670abf4fbf37017191e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0004_visits_export.csv",
+      "sha256": "c5de7aa49151522fef179fd5ec401961c7e8ad8b07a7ae76679b91eefac6ef28"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0005_visits_export.csv",
+      "sha256": "006a3f45f3199f1677feb86a02b4c36d442bf04658fc2e2330c23d7ad5cdd2e9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0006_visits_export.csv",
+      "sha256": "e2aa6631a14c33f5f7935e72ac1ebba0fa64495be2b692cc217a487b716c5106"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0007_visits_export.csv",
+      "sha256": "56a4e92f9d143aad34e1adf28c6af5fe2b55675fc322ce037ca48b82cb855bf8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0008_visits_export.csv",
+      "sha256": "a4470a2087c95fae136b4929a135529bdb34195b934f5df28c827bffddd1267b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0009_visits_export.csv",
+      "sha256": "a4844c3c63b48e274c011f2e33c010a898ad3c6e21f50214783c97ac835c1010"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0010_visits_export.csv",
+      "sha256": "c8e0af5b661273edfdb79e7bed0e72b3e0fc262546f95e7ad9e53c80e76de45a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0011_visits_export.csv",
+      "sha256": "69d84ffa9fa004bbe49fec8584666fda0ace2d3c913eda8c949614b1a44f504d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0012_visits_export.csv",
+      "sha256": "8bff4230f90d0911bb2323fba7c9a0cd8b0ab9bb6a3581d11bd996e3a4493385"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0013_visits_export.csv",
+      "sha256": "29ae47f0c60a2270e16ce16e6746b7960e3c8f6a672a0567a7e828fedcdc19f2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0014_visits_export.csv",
+      "sha256": "6d09e2894f45dea630a354413b7f851c330e604368dbcdfc044d0a9dba881b80"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0015_visits_export.csv",
+      "sha256": "88cfe1f608493a6305c1726990eb1f15254f8c9c7de8a317655bd5000782ac53"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F3\\F3_H2_0016_visits_export.csv",
+      "sha256": "db338f4e243c59b13c8d89b883183c320b462766bc6699b869f9efefed83025b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0001_visits_export.csv",
+      "sha256": "e9160f67aa7e809c4c8ddd1b2abb96adff613acb63fc4120f4a2b61f3e5a33f1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0002_visits_export.csv",
+      "sha256": "1e2647bce44fdcfda4c75cf968b968528fc793b250592c17e17c75133d82da27"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0003_visits_export.csv",
+      "sha256": "f584c757ebe71f3ec6ed28fb8f7cb08227af917d258795bf38e7ac8d4dae2dbb"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0004_visits_export.csv",
+      "sha256": "c6e2ec90ed9e3096e79e453b7c53f199387b794fa1e524c2133ff9e074768341"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0005_visits_export.csv",
+      "sha256": "6f3a3b9655ca508f3eaf526408aa704ad380015ffab60f64cd87aa783c2c5ed8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0006_visits_export.csv",
+      "sha256": "828fec2de15631293149eae49a651b341d5dfc8504feb097d74d8f0a3fc98bb0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0007_visits_export.csv",
+      "sha256": "fdab5b4ae75a09d9a46a48bf25dbb9c5bfd67148ea55e2cc72fe646a020dc48c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0008_visits_export.csv",
+      "sha256": "426b66fd82832a3ea0421f566587ef42a2f1b2ca5a9599ec6747742141c5f3f1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0009_visits_export.csv",
+      "sha256": "6a9a9fd47b76d36e67968a8a0c81265443cae23c96732264cbcd67e38f396faa"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0010_visits_export.csv",
+      "sha256": "727c198ee391551a383e7e76ad767264ce0197e2630102b2c2df5c8c3726aa63"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0011_visits_export.csv",
+      "sha256": "464e0c0db71a14ea971f6b587d003049064bdf83c2bcb63e52b405d5182c516b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0012_visits_export.csv",
+      "sha256": "baa5917112a7644e6a7373f0390d097f4da4fe7527476cbb4aa7afd124eb6345"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0013_visits_export.csv",
+      "sha256": "9af01f75df009c4e20b084022408921862a7897439d701a134dd50c344cecd79"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0014_visits_export.csv",
+      "sha256": "09d8477869cfc23ac70e51109a22a3d2eca93d7981ad59b4c69028d46533435a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0015_visits_export.csv",
+      "sha256": "e0342315254d4a83fcb70794b62339d8109dc0477e40b8a44339ae1662cb7640"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0016_visits_export.csv",
+      "sha256": "9c94502eb499f1f696679ec54156372ce25e9a592d65437d5ef3256b2e832ed5"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0017_visits_export.csv",
+      "sha256": "997cb3e48fb7c9aedb907403c44f7149376ffbefa2843a9fa74a7906248d2d19"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0018_visits_export.csv",
+      "sha256": "a0645ab00a0d4e63fb8948d64e8e7d2bce3292a4cae49864c964c52ee054a1d4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0019_visits_export.csv",
+      "sha256": "74e2b03206dbd40741957a02918b3f0eb64758352a906c58ba66d8c34a4c723f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0020_visits_export.csv",
+      "sha256": "9c679159b2c613537ff437970a691e94fd35fc77ff4d406416bbef9c7cde4248"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0021_visits_export.csv",
+      "sha256": "35382c02b3f9735209bd6057603b66b46b2a32fc5e423bce72ee0b36a372d5f7"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0022_visits_export.csv",
+      "sha256": "a2b497450c54cdee6a8b82e795c876ac9629cf2797ebda8d3b8f591c54e6a8d9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F4\\F4_H2_0023_visits_export.csv",
+      "sha256": "2e9701787a22d7acd926baa94f5d5fe8e6ee945d49b97359a43944b20cd86086"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0001_visits_export.csv",
+      "sha256": "8ec0dd6ebf9fa61aae699a55fdab1d6e726c7a1deea526c583a41939359829d2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0002_visits_export.csv",
+      "sha256": "17be10daff9547ac67309e9fccd94982209a18a32093f58e2f58191a51f07dd1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0003_visits_export.csv",
+      "sha256": "1aed530165ff3c4e4c4121e1497a3507c5343e59a4433ae8b094608dc6dc9ed6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0004_visits_export.csv",
+      "sha256": "96d8bc8edbb54a2186a0cec3ecf993baa746a645cfbe9d2b1805444c47269748"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0005_visits_export.csv",
+      "sha256": "e02da658619322945e5ab86a506207d31f15b1478f970b840c22cba65516f6ae"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0006_visits_export.csv",
+      "sha256": "1a59c95ad8d94b905e2494d6fcc1cadbedf9c50efecbb7ffe6825aec95a3d94f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0007_visits_export.csv",
+      "sha256": "2ee37de8fa9afd887715944468379010ff6b0e0a7c48949db73e55c61898777d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0008_visits_export.csv",
+      "sha256": "ee6466f2fd706c783081cd5fc446a1346f847666ac86c4cf1c57ab7c38ab8cb8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0009_visits_export.csv",
+      "sha256": "7f5577e2a598ec75a5445af7e40c5a6c10f43e6848c48349f2b231475160e09e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0010_visits_export.csv",
+      "sha256": "a12e0d91c10bbbbe6aa1bca19d853512d8e0d4c598d3b1ade687678f334d9f79"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0011_visits_export.csv",
+      "sha256": "1107dfe4aad994172c28b297fcd3c74a7f3efe9668ef9f76a89c365d864323b6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0012_visits_export.csv",
+      "sha256": "5ed47eb1ce15a9da13fcd1136a2dc1aef60f3dd2932688ec071a465b5c97cff7"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0013_visits_export.csv",
+      "sha256": "e753e44cdf59b69c8b5510a1ab2f0770c90faa6a951b94621a295ebf9772614e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0014_visits_export.csv",
+      "sha256": "aba3e04df828858f16b0ae9ec9b3d27e4d3907c21f0452c8627952be60ed85a1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0015_visits_export.csv",
+      "sha256": "f5c136e6f4f6fe772903d04e575efdb70e099644b38c08f36ae0f4e47618f074"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0016_visits_export.csv",
+      "sha256": "2878911881be54fc0353018a0ffabec9d7b893076d916f11c2a99664e20d0747"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0017_visits_export.csv",
+      "sha256": "d3efdd93ecaf8781bfd21ed6a8eb9d04305dda5448eea390c485be9cd764a17e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0018_visits_export.csv",
+      "sha256": "1d836a391d210d152b4335ccd4f6508093df5a836d3900f57e6430ae81a8f647"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0019_visits_export.csv",
+      "sha256": "a08e6829e5f0e64b09206457d18ea6fc73d0a73d6f4f49d514372bd7c6b56894"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0020_visits_export.csv",
+      "sha256": "58b429afd09b13a09c5a54428df6fb35378428d4fe89b9b9b7e3ff0251b7d1db"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0021_visits_export.csv",
+      "sha256": "700e732f1c27656d3d304fe30a6a2985f4f7cfa0b780aaf41b8be61bbeb7aeb2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0022_visits_export.csv",
+      "sha256": "de8fce7dbec547b9fc3ee6a43d7a8cfbcfcf5e2f66081b24057b3b01903ff0cb"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0023_visits_export.csv",
+      "sha256": "b36d60c1a0c36c47918b4bd6bfae284a25b5bb95b61b2efc0ff4e92eb853c231"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0024_visits_export.csv",
+      "sha256": "419a502b34af1d32ff6c0e97ef22400d5b97d35bf3cbe4dfe6ad9e8be6f5aae7"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0025_visits_export.csv",
+      "sha256": "d61ca6a46b3b1da122e1afeb055d570a09c4b21860b2d8b10d99c57c7f85d066"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0026_visits_export.csv",
+      "sha256": "d3ef6c804adb8f56024f647b77515d409d6cfa0b888ed709434da93c52c38acb"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0027_visits_export.csv",
+      "sha256": "d243cfe3de4e86df9400fcdc7246c0539c3c0aa32c98402a2d40948445d3e555"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0028_visits_export.csv",
+      "sha256": "900daee8c0e4e0d00b76b55752c38059282888cf7d699f268b257c97ea3e5253"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0029_visits_export.csv",
+      "sha256": "d4de3ce3320025d8704446d4336fb9abfa0917c91ccecdb817409c6e7e19e0dc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0030_visits_export.csv",
+      "sha256": "91dee1d00e04e9bdd6e5e43137c3bcb09e287e80175ccf925333c7cf7111ac90"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0031_visits_export.csv",
+      "sha256": "5bf62add9d0c005e357f160e07fdcf049cb4ee7fd5db0134e18b9344ba03d4a6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0032_visits_export.csv",
+      "sha256": "54bbb6ec7be0dbc8a44df66b9d20259efd90f9510d675569e443498c050e0c2f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0033_visits_export.csv",
+      "sha256": "eb1573730a6bc27ed22b9fedad7173814c7c5a0bd835a5eb666293bd1bb26cee"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0034_visits_export.csv",
+      "sha256": "77649bf571823b25b1f699de4ffe69b60786b8092b6616750b2493cb03c5c90f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0035_visits_export.csv",
+      "sha256": "0e86aa02aaf3e657dae01c50676698bcf0bebcc17d099156721a6e8ebf0f10d4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0036_visits_export.csv",
+      "sha256": "c3ca4cc59a1f2a5118636382adf093c741edb2e15688bf44377ab02a0de4f9dc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0037_visits_export.csv",
+      "sha256": "29e7baa60e41f41c03da13a5a0fecf9573e14f3856c013ec3e2adcde88256988"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0038_visits_export.csv",
+      "sha256": "5dadd84c0c1903f471428098992ea189fb7002e88318301cc6a61014b620e124"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0039_visits_export.csv",
+      "sha256": "c36ed2011ac4345de19a52ffb54c0cc78cc97d4aa341f00d8ce2b58443bb7c9c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0040_visits_export.csv",
+      "sha256": "13fdb7046523b17fe1ed9916b0752de8e46962d728dc5625498ad3d486d7fc0c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0041_visits_export.csv",
+      "sha256": "b9867b08f748eb40d114d35c8ca9069b0ead10bb6d000a7cc727bfb5a0dc38f2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F5\\F5_H2_0042_visits_export.csv",
+      "sha256": "b9f31822e71e20fd68625aa0f06c4ea9254c83f1c71c8c338f29a460cd0af840"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0001_visits_export.csv",
+      "sha256": "74198be620d13f37636bbc04166b6655a77d62838cb0a7afb2154e5055a2623a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0002_visits_export.csv",
+      "sha256": "e4e53b83c7490a4d8d762b31504bec06525ff1f306cf0e31006222be8a9d4764"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0003_visits_export.csv",
+      "sha256": "fe5f70dfdbbf962b1cfce9be77a1c2af9fe89544f787959944e36df17459f7d1"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0004_visits_export.csv",
+      "sha256": "976b29e19a68aebae4cb1e966702150e8bf39214a66cfbd48ddeb34e9082cd9f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0005_visits_export.csv",
+      "sha256": "aa2aae0c906f6bf887f8bcf625c75347fbfb30715ccdfb9e0ff675319fea5d9b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0006_visits_export.csv",
+      "sha256": "b7909722588a8832cb15d11a93a4083f3aef3916a632e5264cd670e09edff719"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0007_visits_export.csv",
+      "sha256": "5d6519d1e63354ce2d4a1d9f2ee622a4302a6e0fc737142ef7812015aa9d3be5"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0008_visits_export.csv",
+      "sha256": "51e87cf465a65edd6bb3a644050b4df1410ce29628bc30d0ad900b1c63b35694"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0009_visits_export.csv",
+      "sha256": "f371410b77efc7c54c96baac82cd02601cfc44c9907d960fcaa17845c737bd48"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0010_visits_export.csv",
+      "sha256": "2ae12c7b62be0630d78577e5e4785d0fa7b910cec84119577cc6365a2c4ec9e0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0011_visits_export.csv",
+      "sha256": "8341725c0aaec548cca0a47002b6a7fcbbee97a56e646023f0dd5ebd8705d405"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0012_visits_export.csv",
+      "sha256": "c39c6d63ae79fcf63ebb16362eb5a55bd0b3372cd6e39d53dd7a4e176a3285ab"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0013_visits_export.csv",
+      "sha256": "37f20f9bc675f806eb47bba65f500d050b9df6188445ea03b1fc138d792bac1f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0014_visits_export.csv",
+      "sha256": "0588381a790bf83e151305422bf64ab2e8845050fea82bc18a3f2a45e5e73843"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0015_visits_export.csv",
+      "sha256": "cbdd06f7c499f593923e94f14d10050eb066ec74f884a1672ddab449622ab44b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0016_visits_export.csv",
+      "sha256": "fea4531274bb67cfcc718eb98ce18ff5cfb57273a928a4baa8668082941a235a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0017_visits_export.csv",
+      "sha256": "67b77b598c82494254984cf2e661cb669e508101d5cf56fcc1dd269573f38152"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0018_visits_export.csv",
+      "sha256": "4b404ecc2cff68b42bc93eb718c77bfbaf494a5d67c7133caf4dac3d7afe9355"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0019_visits_export.csv",
+      "sha256": "83b2bbfe352f511ef6a594940b16664e13243a1a090240258ad2207ef0e0d5d6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0020_visits_export.csv",
+      "sha256": "063aa1bb31952d7affa685c429d62408cd96ff9079b9b7b8abf9dc511ab8b277"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0021_visits_export.csv",
+      "sha256": "4275bc48fddbd520513b78e63ece8517fd428e2e069696704f1178705938b76a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0022_visits_export.csv",
+      "sha256": "2ab7d8f9d0e7b7ef7771b77e665629e952bcd18d4a07f491ea04acb55ae3e88e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0023_visits_export.csv",
+      "sha256": "f3bb0492070d3a791b36703b792102fa309946d46273aebfee6e4a7a9f7a7f07"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F6\\F6_H2_0024_visits_export.csv",
+      "sha256": "24db834c797cf92db05343fc580a2dafcf1ec8fe1b69475036d505a6bb0a7be7"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0001_visits_export.csv",
+      "sha256": "b5aea4459e94599ec29605ceba0e90abebffc1ceb753d7f6eb3fa2dd6cb96af8"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0002_visits_export.csv",
+      "sha256": "a859d0297baae6aa133f72df181d305291868fd6c7983e0f92cdef3d87e25807"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0003_visits_export.csv",
+      "sha256": "17c1d399b0d4009d9330fb742f7b10719ab9c81ca17b80da9ff24bf9fafa97c9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0004_visits_export.csv",
+      "sha256": "f0c84b6e2316ebb1d334dfd8894b28dedd32bc2b59e3e73bae0017e7dd7effaa"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0005_visits_export.csv",
+      "sha256": "1bb030ddfd263d993316468155b35a7c98fff1c506c29c6bacb74e2fe7cd54bc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0006_visits_export.csv",
+      "sha256": "a17acf576b807563e61d7802e59e7512394b3854bd63ce8e4e68cb93c17a8c72"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0007_visits_export.csv",
+      "sha256": "68c69d1cfe1093b23b73e82e332bd4225ad40e0ad807cf78f2701b8401ccf6e2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0008_visits_export.csv",
+      "sha256": "f6631f4ffcc281a4e094ea8c6781d9d88396a346af476b002c2dbe57874b777e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0009_visits_export.csv",
+      "sha256": "37bf1d7f124463161c532e758c98f180a01b4cad91c8de8f3ab81e3552e8e90e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0010_visits_export.csv",
+      "sha256": "85af70e35d3c658638ce589edf007bb925b45840aa9dc25970e11004222c99fe"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0011_visits_export.csv",
+      "sha256": "cec0a6bf8222fcc42f20b92d96846e47cb73513382a84d5110357fb601519135"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0012_visits_export.csv",
+      "sha256": "c77bd97022ec719b00b60b6862bcc7baefbee858f600e6e00f061ffdf7768b7c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0013_visits_export.csv",
+      "sha256": "16291a8ef5091f9c9f0d5ce68560391c6d995a3861fa028ea2db5138644a1827"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0014_visits_export.csv",
+      "sha256": "b722fdcf402f14376e0e52583a2db98c0de970613b8465ca1f84fa1b69db6d07"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0015_visits_export.csv",
+      "sha256": "1c316cc9ac0420555abcb7582200155f75fc51bc35b0b709ff5231a2417a2388"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0016_visits_export.csv",
+      "sha256": "4fcb406669425e832c09fbed6dcee9ff72fdd1e33df2e6f017034050aa39c3d6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0017_visits_export.csv",
+      "sha256": "9c303a000b6a9c873a62aeb13ea3c0ddbae2b1b069e5efd5fe0624f0ae599727"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0018_visits_export.csv",
+      "sha256": "35c57efb46f0e2a3318254454c898788c2e2fa83d7920049a325f696bc013c8e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0019_visits_export.csv",
+      "sha256": "e0679197a61bbb2082160a9d12dee03e19abf817a604644df0f2c16b07b096c2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0020_visits_export.csv",
+      "sha256": "64fbc2d0f3dfe771bd04954c40b6feca87490c3fcf9ed8c2b5aacf2bbe73ca57"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0021_visits_export.csv",
+      "sha256": "4924d8f82256710a489b7ddd1e0e0658f4f991cee625485850172418a8c51241"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0022_visits_export.csv",
+      "sha256": "d1878fe2258dfb4c85efc9ece59dd83c0e550e44ca625f3f978d5baac86c3c87"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0023_visits_export.csv",
+      "sha256": "2ffd93a807ea21943ccd54ba39cc94b9aeb84e92424fc5617ccc7629ee3fa224"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0024_visits_export.csv",
+      "sha256": "7452a11b7295cc6f727ba826446f9484d622b8e0bd9d1a19c6bf34cfa15d1224"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0025_visits_export.csv",
+      "sha256": "7446e50577c2b56d7e1d1f8e3ddf2fb8d54e50d7544f7b2950f215767b6f1e3a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0026_visits_export.csv",
+      "sha256": "e890036864a8594e369f1112427e13db1c6ca5940782755cc00894893ba31e71"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0027_visits_export.csv",
+      "sha256": "9f56a7c3ebb7c49f1ec54cb7eb2374ef4c02d71b43a2ab68c3e9ef9c0ace180f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0028_visits_export.csv",
+      "sha256": "027771e1ad650dfde543e924c086e103fb33de2e2d5ecae1a9517948922b5526"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0029_visits_export.csv",
+      "sha256": "08199ef98b4052a2225725f48543d35da849ff5b8c11d2c1fbfc654821257b1f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F7\\F7_H2_0030_visits_export.csv",
+      "sha256": "71ea5e3c287eca8f0d29b8a6844ad5a48f924a89ce3c28d7807e1efc8c3a6565"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0001_visits_export.csv",
+      "sha256": "e87ba6ed9c02074bcffedb6cf4e509d63a554fe8d465fbc489d911120672c570"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0002_visits_export.csv",
+      "sha256": "33a724c4376adb252abc74e37ea4d91eaf8db91af2b7a1eb456f6e666137026c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0003_visits_export.csv",
+      "sha256": "3fdd7daf6ac7a9bfff3fc727d22f263a1a1881c670d45f9e30c98993bb405242"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0004_visits_export.csv",
+      "sha256": "32c856f527be30ce49bac9595e357684f002bf176f805ed8c2f7648dbe9227c6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0005_visits_export.csv",
+      "sha256": "fc51d0e7b4d28b398a624f82809ce61150dbb8ce63a3f9ba82d2daf74e14245b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0006_visits_export.csv",
+      "sha256": "cb1a46068a099b52cabb53124ca01bd23841e4f2b5b0978fad779f2b9cc8e857"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0007_visits_export.csv",
+      "sha256": "9b0cbcaf0b96bb322820a8d04ae4b5954dbbeaff19b5b43f820967e00e3173fd"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0008_visits_export.csv",
+      "sha256": "3f1350c354b223d6ece6d3d5f3fa6e291828fd3b6f34996cb6ae846a4a2aee99"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0009_visits_export.csv",
+      "sha256": "864caa920b72abd8b1303731d58caf7607aa94335a1fe656294f2e54cc970077"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0010_visits_export.csv",
+      "sha256": "5d61e1a54eacd7fa664a5ba39051f0f3804cb8b565b0ef2af7ad3d4827feadc2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0011_visits_export.csv",
+      "sha256": "15eab3a2e00693d921e2288c2fd4c681579d33e46759b344b1399234d753b8a6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0012_visits_export.csv",
+      "sha256": "5be189ff7a86c5bc122b9215499e7c30aa164ef6a0b319b2295c9b07f083ee29"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0013_visits_export.csv",
+      "sha256": "f0558f9fbb5a0ba14c4b603a719ad8078c67670a47365984a763bab1807cc9b6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0014_visits_export.csv",
+      "sha256": "24f651f5e0b27f20262f710a72b0832124966aa6015169a4fb5675e8e5985722"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0015_visits_export.csv",
+      "sha256": "9c61a4a5bf12dec2d5dc01bed6817ebe7d3f3777147e67d92f844bd1bbeef231"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0016_visits_export.csv",
+      "sha256": "25e0596443be6f3a46b79a9a7b14698a1ba48cbca7a41fb273a180684781761b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0017_visits_export.csv",
+      "sha256": "a7313a07455658c5fca91f78e18210df8d566d93eb6714fa812eb2b4aef1047a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0018_visits_export.csv",
+      "sha256": "0df35eb111f825f3f502b1dc350783d0e1d6c96d6add3e6cecd2f2e35c5c29b2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0019_visits_export.csv",
+      "sha256": "ed4882d1dca4dcfdc731104fdefa1f3b13812334545ffe3320cc2b7938fa7c72"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0020_visits_export.csv",
+      "sha256": "3268efc75a8b6b5fc0237ca063f68972384e2a51b01b404cb2d5923399375b8f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0021_visits_export.csv",
+      "sha256": "301f5c43be7d54d4ae4617c6db3e2fc5aca5b3d037c859469a6f8a908a8b1725"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0022_visits_export.csv",
+      "sha256": "d3ee7c81e5ba2f7a1f05ff8ff2126d7fe1be2bbb967f5c1dafbc9c41eac466e2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0023_visits_export.csv",
+      "sha256": "43e84ed2493de0beaa5ed1a67aae93d54140f761869e14ac54f97400c636281f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0024_visits_export.csv",
+      "sha256": "6fff26de2caffb60053b0320049710a9b16cf4cebf14258af9c98d8bf9c5efdc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0025_visits_export.csv",
+      "sha256": "412153ba83f0ea012bc8f1efb60749c25b873e94bb5b4f0c7fe56cdaae499f60"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0026_visits_export.csv",
+      "sha256": "2045331a31b830bf9ba41d5202d716dd2571a65d49ae96edc60048ec79bf4766"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0027_visits_export.csv",
+      "sha256": "47752b4f21c041afdaafaf3a5d272937ece474ac4c49964337938092fc115d6a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0028_visits_export.csv",
+      "sha256": "d1c8fe23fadfe3564b8bdbdd1126c11cf3fec637c3948f6ae1ef64ec962631b6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0029_visits_export.csv",
+      "sha256": "416dc4cd6eeb3c12518cd948bcda37b145e07791c09cc0d89972ded0c45346f9"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0030_visits_export.csv",
+      "sha256": "0ff205704c7369552689d895a5d3338c70008f0ce139fcf90a11e1053c2ecbf5"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0031_visits_export.csv",
+      "sha256": "132aa3aa6c7ae429de4a48a573d57d0ee3dfd97931f3d97edeaf3a9ce2d9320c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0032_visits_export.csv",
+      "sha256": "10d5e8058dee459c43cf389206ab887f7fa86cb36ba84dda85966bbc83068f24"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0033_visits_export.csv",
+      "sha256": "cf6dff2aefc8d3e192e7926b0d6b9c646a34ee858bce4f79856a80e069c403fe"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0034_visits_export.csv",
+      "sha256": "5491601fb41b0f3161dadb9f678fd047e71ac5333d75d0579c9d27d5db01e4ab"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0035_visits_export.csv",
+      "sha256": "4f9ebd7759b7a6cbdef6ac23b1ef820f8a955f23630fc5979f44f05093fd8d86"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0036_visits_export.csv",
+      "sha256": "386ca052d04ad73cd2af38acbd626a6e504ed6151596f3f7c8b6bf9ec8b6aae3"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F8\\F8_H2_0037_visits_export.csv",
+      "sha256": "29d3203ab74eb868fc0abc0c21c488e5a0af98fc71b5bf1683015b9c8331ea65"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0001_visits_export.csv",
+      "sha256": "89f9eb3b5157b865b879a05cfbe4ddfd61bd5dde5db7e2b5bbd839e4d3b06494"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0002_visits_export.csv",
+      "sha256": "8e81e3bb398c92529e8217d3925cb12c4f24b245e085a7dd9c43bc723d4bbf6d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0003_visits_export.csv",
+      "sha256": "5d6beb4e08b081006fc82acafdfea394e02a2614402823568bd057b77267d22a"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0004_visits_export.csv",
+      "sha256": "a563a8b32930322d37df61d3eb7a5dc4f160b934b4f2438f2529b8832453c931"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0005_visits_export.csv",
+      "sha256": "675e4be8b132da750a3e3e4c7a53a1e46ad243f854f9ffb6c889c314c8637958"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0006_visits_export.csv",
+      "sha256": "3aafcb445ba0bbe1ed8ed4401763f0eff2dbc7769f84448c9fbc796f9c55eaa6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0007_visits_export.csv",
+      "sha256": "1d19adff6d12c670db98e80f54aabaa7be50720e61fe1111bf194bbe01d3b41f"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0008_visits_export.csv",
+      "sha256": "839cbc6616f26ee60198590e2118af6377da0f98af467ad8513255d3ec4d62fc"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0009_visits_export.csv",
+      "sha256": "15a9f75f664e96f97c6964f32f11d893d0c83086bf462d438268b9286f49f119"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0010_visits_export.csv",
+      "sha256": "67d49cf271af1f5d9333dc92ed1a02eb4d3102639ba3c0e775117d524a52a03b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0011_visits_export.csv",
+      "sha256": "e0115e9d1ff0fe4c8ea354b5876434e2ca2de60f596aad95d9df167a76ac71c4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0012_visits_export.csv",
+      "sha256": "c19d563be6a89478b6375aa032396f6ad695d8c7bdf3796088698fabd35505b0"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0013_visits_export.csv",
+      "sha256": "ceca6a96689d159e083d265a47fc9cac5c505b79172773dbb210b199285cbc82"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0014_visits_export.csv",
+      "sha256": "868d34f595e2c05a523da6a4695fe1bc1cb6b544e3ff241ffe37fe98056da8d2"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0015_visits_export.csv",
+      "sha256": "11d243b3c60f9a78958fb9a5916c361b79007ef01f69387d181f5a9d4d1e3a50"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0016_visits_export.csv",
+      "sha256": "2765a866fdb9a282cd1640ba865701f5895f7677e1b8fe56cf6a9f70af320715"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0017_visits_export.csv",
+      "sha256": "4761358fdfc5af0560912c58a6f13d70abac90034fe233d6f74a6e67388cab42"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0018_visits_export.csv",
+      "sha256": "68041960e7cfb145df1afb5c4a86238048610f9e1c611a631fa0e3c06a681427"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0019_visits_export.csv",
+      "sha256": "aff847819045dd106fb204de49d2d924e1353af061a724f3c3a9175cef78fe59"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0020_visits_export.csv",
+      "sha256": "5cc69057a6c35fbbd8f21db816a8c63ffe7b227f4ab026bbbb32b75a7def8a36"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0021_visits_export.csv",
+      "sha256": "e7ba02ffdf5be62a3589a1ee4512cfc37486e15373ef30f63220e803f06f96d5"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0022_visits_export.csv",
+      "sha256": "62fceb7dad12639a4f970c0c4c3cb7985323d0b49d8adde55ec84def08c3179c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0023_visits_export.csv",
+      "sha256": "380e0eeeb1d3beacf39945ab7710271b1050784c0560ac54d329225a4fc60178"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0024_visits_export.csv",
+      "sha256": "8a05e5ffe2d6ecf6541a46f33a72ca4606c4c2e9e5af8c9fc5ab4369a63f5113"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0025_visits_export.csv",
+      "sha256": "64aa4c8086b6df401251c6cd47858593ceaa373417d95809023e785a44575796"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0026_visits_export.csv",
+      "sha256": "5ca4fd1e2ba1a945d0b611f48bcbcffbd2303da6e91166bfdadfa27c423efd05"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0027_visits_export.csv",
+      "sha256": "b541771ddca7b12b8ca2059ef31a13e29283ebe533baeeb7dfb3680dc3cb1c6d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0028_visits_export.csv",
+      "sha256": "a1e9539fbc000e51161ebc3fce271a4ea6bed2a2555fbd75755eb7b58be77d28"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0029_visits_export.csv",
+      "sha256": "c70eb7ccae43cfc9e887794115950819ad5b790136dfe8172b71813e2b2de3b6"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0030_visits_export.csv",
+      "sha256": "1836e852909df5fa5808ddbc8d0428cb0ecce04f8ff927c8a4c10a40e2a45013"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0031_visits_export.csv",
+      "sha256": "f12a92a3c5040d6c8bec73f4c71ec88771bf0e9b84b7b0a7e55cf0f62232f9b5"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0032_visits_export.csv",
+      "sha256": "14e73faa41fc2ce81b3162e455edff3ccb4b226618b0425c16d137282089635c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0033_visits_export.csv",
+      "sha256": "c0c984099b462c8cd11b849dfe6540cbd415140e5f7e34299c9b06f0b30e0a7c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0034_visits_export.csv",
+      "sha256": "eb84af09337e90003fcde8ecb97d47d1aff6bb14e62477693970c468a3c9f8c7"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0035_visits_export.csv",
+      "sha256": "ee0708feb2a9c26a5dd8db27b5874de390ef1894ee73a02eaa2ba819e91a8666"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0036_visits_export.csv",
+      "sha256": "3e4aab6e3b19c570f35d7f460667c5d58420dc14ae30107baf9353c1678c81ad"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0037_visits_export.csv",
+      "sha256": "f12d439d61faff3277cbba0a8344ffd70c339e1eac61d6faeac7a6459c007f5d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0038_visits_export.csv",
+      "sha256": "0b8d0758955a390fc583824cf9ab6ae3edc67954d729d1bf4169f52a7d6211ab"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0039_visits_export.csv",
+      "sha256": "058d8c7fd8856ae699c68d24fc23d33c0c6e06bca2328ce6b21ec4a80507920c"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0040_visits_export.csv",
+      "sha256": "301abc70d59c8884c8184ce554fe0d23d3678aef9196db145bea060d6b47b88b"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\PINKCARD_READER_PRJ\\DATA_ANN_HCC_PSEUDONYMISED\\Human_2\\F9\\F9_H2_0041_visits_export.csv",
+      "sha256": "89c6dce4ef256a33ee205c050118b3765652a6833ebcb7e89fefa950ce81c5c4"
+    }
+  ],
+  "matching_manifest_sha256": "927ac974f83df9ed7d7ed3c464452b982991888cd6a45c870b3d094afc31a9ec"
+}

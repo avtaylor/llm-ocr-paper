@@ -1,4 +1,4 @@
-"""Reference-based field agreement on DATA_ANN matched cards; standard library only.
+"""Reference-based field agreement on DATA_ANN_HCC_PSEUDONYMISED matched cards; standard library only.
 
 python CODE/ANALYSIS/Replicable/analyse_accuracy.py
 python CODE/ANALYSIS/Replicable/analyse_accuracy.py --reference Human_1 --candidate OCR_qwen
@@ -21,7 +21,7 @@ from ocr_experiment_facilities import OCR_EXPERIMENT_FACILITIES,FACILITY_DISTRIC
 
 ALIASES={'age_at_visit_months':'age_months','breastfeeding_type':'breastfeeding','age_at_enrolment_days':'age_at_enrolment'}
 VISIT=set('age_months visit_date height_cm weight_kg muac_cm wasting_malnutrition breastfeeding stopped_lt6m stopped_ge6m mother_status abdominal_exam hiv_testing hiv_infection cpt follow_up next_appointment_date'.split())
-META=set('district facility facility_type facilitiy_location file_name folder_name pdf_file_name district_code facility_code source_card_id file_path comparison_site'.split())
+META={'hcc_match_suffix'} | set('district facility facility_type facilitiy_location file_name folder_name pdf_file_name district_code facility_code source_card_id file_path comparison_site'.split())
 EXPLICIT={'agrees_to_fup','agreed_to_fup'}|{f'hiv_test_3_{s}' for s in ('sample_date','type','sample_id','result','date_received')}
 NUMERIC=set('birth_cohort_year birth_weight_kg age_months height_cm weight_kg muac_cm child_age age_at_enrolment cpt stopped_lt6m stopped_ge6m'.split())
 CATEGORICAL=set('wasting_malnutrition breastfeeding mother_status abdominal_exam hiv_testing hiv_infection follow_up'.split())
@@ -139,9 +139,9 @@ def run(args):
     empty={f for f in rf if all(not clean(r.get(f,'')) for c in ref.values() for r in c['rows'])}
     excluded=empty|EXPLICIT|{f for f in rf|cf if 'path' in f or f.startswith('source_')}
     fields=sorted((rf&cf)-excluded)
-    matchdir=args.matches or ROOT/'OUTPUTS/selected_agreement'/('03_card_matches_'+args.reference+'_vs_'+args.candidate)
+    matchdir=args.matches or ROOT/'OUTPUTS/hcc_pseudonymised_agreement'/('03_card_matches_'+args.reference+'_vs_'+args.candidate)
     if not matchdir.exists() and not args.matches:
-        matchdir=ROOT/'OUTPUTS/selected_agreement'/('03_card_matches_'+args.candidate+'_vs_'+args.reference)
+        matchdir=ROOT/'OUTPUTS/hcc_pseudonymised_agreement'/('03_card_matches_'+args.candidate+'_vs_'+args.reference)
     manifest=json.loads((matchdir/'run_manifest.json').read_text())
     orientation=(manifest['left'],manifest['right'])
     if orientation not in [(args.reference,args.candidate),(args.candidate,args.reference)]: raise ValueError('Matching datasets do not match requested reference/candidate')
@@ -199,7 +199,7 @@ def run(args):
         for field in ('visit_date','age_months'):
             sr=[r for r in sensitivity if inscope(r) and r['field']==field]
             sensitivities.append(dict(**scope,field=field,pairing='age_only' if field=='visit_date' else 'date_only',**field_metrics(sr,field)))
-    out=args.output or ROOT/'OUTPUTS/selected_agreement'/('04_accuracy_'+args.candidate+'_vs_'+args.reference)
+    out=args.output or ROOT/'OUTPUTS/hcc_pseudonymised_agreement'/('04_accuracy_'+args.candidate+'_vs_'+args.reference)
     out.mkdir(parents=True,exist_ok=True)
     for name,data in [('accuracy_summary',summary),('selected_indicator_summary',selected),('all_field_accuracy',byfield),
         ('categorical_accuracy_kappa',[r for r in byfield if r['field'] in CATEGORICAL]),
@@ -230,7 +230,7 @@ def run(args):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--data',type=Path,default=ROOT/'DATA_ANN')
+    p.add_argument('--data',type=Path,default=ROOT/'DATA_ANN_HCC_PSEUDONYMISED')
     p.add_argument('--reference',default='Human_1')
     p.add_argument('--candidate',default='Human_2')
     p.add_argument('--matches',type=Path)

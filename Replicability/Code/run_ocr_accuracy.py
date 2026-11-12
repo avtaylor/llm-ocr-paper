@@ -2,7 +2,7 @@
 
 python CODE/ANALYSIS/Replicable/run_ocr_accuracy.py
 python CODE/ANALYSIS/Replicable/run_ocr_accuracy.py --reference Human_2
-Outputs: OUTPUTS/selected_agreement/05_ocr_accuracy_vs_<reference>.
+Outputs: OUTPUTS/hcc_pseudonymised_agreement/05_ocr_accuracy_vs_<reference>.
 Individual model reports remain in their 04_accuracy_* directories.
 """
 import argparse
@@ -14,11 +14,11 @@ from analyse_accuracy import ROOT,run,write
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--data',type=Path,default=ROOT/'DATA_ANN')
+    parser.add_argument('--data',type=Path,default=ROOT/'DATA_ANN_HCC_PSEUDONYMISED')
     parser.add_argument('--reference',choices=['Human_1','Human_2'],default='Human_1')
     parser.add_argument('--output',type=Path)
     args=parser.parse_args()
-    args.output=args.output or ROOT/'OUTPUTS/selected_agreement'/('05_ocr_accuracy_vs_'+args.reference)
+    args.output=args.output or ROOT/'OUTPUTS/hcc_pseudonymised_agreement'/('05_ocr_accuracy_vs_'+args.reference)
     report_names=['accuracy_summary','selected_indicator_summary','all_field_accuracy',
                   'categorical_accuracy_kappa','date_accuracy','numeric_accuracy','age_date_sensitivity']
     combined={name:[] for name in report_names}
@@ -26,7 +26,7 @@ def main():
     for folder in sorted((args.data/'OCR').iterdir()):
         if not folder.is_dir() or folder.name == 'gpt_ocr': continue
         model='OCR_'+folder.name
-        output=ROOT/'OUTPUTS/selected_agreement'/('04_accuracy_'+model+'_vs_'+args.reference)
+        output=ROOT/'OUTPUTS/hcc_pseudonymised_agreement'/('04_accuracy_'+model+'_vs_'+args.reference)
         run(SimpleNamespace(data=args.data,reference=args.reference,candidate=model,matches=None,output=output))
         manifest=json.loads((output/'run_manifest.json').read_text())
         for name in report_names:

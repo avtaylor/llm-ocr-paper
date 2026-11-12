@@ -8,16 +8,16 @@ from match_cards import ROOT, write
 
 def main():
     totals=[]
-    for folder in sorted((ROOT/'DATA_ANN/OCR').iterdir()):
+    for folder in sorted((ROOT/'DATA_ANN_HCC_PSEUDONYMISED/OCR').iterdir()):
         if not folder.is_dir() or folder.name == 'gpt_ocr': continue
         model='OCR_'+folder.name
         for reference in ('Human_1','Human_2'):
             subprocess.run([sys.executable,str(Path(__file__).with_name('match_cards.py')),
                             '--left',model,'--right',reference],check=True)
-            output=ROOT/'OUTPUTS/selected_agreement'/('03_card_matches_'+model+'_vs_'+reference)
+            output=ROOT/'OUTPUTS/hcc_pseudonymised_agreement'/('03_card_matches_'+model+'_vs_'+reference)
             result=json.loads((output/'run_manifest.json').read_text())
             totals.append(dict(ocr_dataset=model,human_dataset=reference,**result['totals']))
-    output=ROOT/'OUTPUTS/selected_agreement/03_ocr_card_matches'
+    output=ROOT/'OUTPUTS/hcc_pseudonymised_agreement/03_ocr_card_matches'
     output.mkdir(parents=True,exist_ok=True)
     write(output/'all_comparison_totals.csv',totals,list(totals[0]))
 

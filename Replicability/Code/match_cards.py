@@ -4,7 +4,7 @@ python CODE/ANALYSIS/Replicable/match_cards.py
 python CODE/ANALYSIS/Replicable/match_cards.py --left OCR_qwen --right Human_1
 python CODE/ANALYSIS/Replicable/match_cards.py --left OCR_qwen --right Human_2
 
-Reads DATA_ANN only. Coded manual decisions are in card_match_overrides.json.
+Reads DATA_ANN_HCC_PSEUDONYMISED only. Coded manual decisions are in card_match_overrides.json.
 No source rows/cards are edited or deduplicated. Ambiguity is never resolved by
 row order. Matching uses identifiers and birth dates, not visit measurements.
 """
@@ -84,7 +84,7 @@ def load(data,name):
         item['hccs']={hcc(r.get('hcc_reg_no')) for r in rr}-{''}
         item['uids']={uid(r.get('unique_child_id')) for r in rr}-{''}
         item['births']={birth(r.get('birth_date')) for r in rr}-{''}
-        item['suffixes']={suffix(r.get('hcc_reg_no')) for r in rr}-{''}
+        item['suffixes']={(r['hcc_match_suffix'] if 'hcc_match_suffix' in r else suffix(r.get('hcc_reg_no'))) for r in rr}-{''}
         item['inconsistent']=any(len(item[k])>1 for k in ('hccs','uids','births'))
     return cards,domain,paths
 
@@ -189,7 +189,7 @@ def run(args):
         rr=[r for r in summary if r['district_code']==d]
         district.append(dict(district_code=d,left_dataset=args.left,right_dataset=args.right,
             **{k:sum(r[k] for r in rr) for k in ['left_cards','right_cards','matched_pairs','left_unmatched','right_unmatched']}))
-    output=args.output or ROOT/'OUTPUTS/selected_agreement'/('03_card_matches_'+args.left+'_vs_'+args.right)
+    output=args.output or ROOT/'OUTPUTS/hcc_pseudonymised_agreement'/('03_card_matches_'+args.left+'_vs_'+args.right)
     output.mkdir(parents=True,exist_ok=True)
     write(output/'facility_matches.csv',summary,list(summary[0]))
     write(output/'district_matches.csv',district,list(district[0]))
@@ -211,7 +211,7 @@ def run(args):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--data',type=Path,default=ROOT/'DATA_ANN')
+    p.add_argument('--data',type=Path,default=ROOT/'DATA_ANN_HCC_PSEUDONYMISED')
     p.add_argument('--left',default='Human_1')
     p.add_argument('--right',default='Human_2')
     p.add_argument('--overrides',type=Path,default=Path(__file__).with_name('card_match_overrides.json'))

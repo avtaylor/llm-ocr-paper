@@ -1,0 +1,87 @@
+{
+  "normalized_cells_verified": 1954195,
+  "comparison_count": 13,
+  "comparisons": [
+    {
+      "left": "Human_1",
+      "right": "Human_2",
+      "matched_pairs": 410,
+      "identical": true
+    },
+    {
+      "left": "OCR_gpt41_mini",
+      "right": "Human_1",
+      "matched_pairs": 340,
+      "identical": true
+    },
+    {
+      "left": "OCR_gpt41_mini",
+      "right": "Human_2",
+      "matched_pairs": 333,
+      "identical": true
+    },
+    {
+      "left": "OCR_gpt4o_mini",
+      "right": "Human_1",
+      "matched_pairs": 290,
+      "identical": true
+    },
+    {
+      "left": "OCR_gpt4o_mini",
+      "right": "Human_2",
+      "matched_pairs": 289,
+      "identical": true
+    },
+    {
+      "left": "OCR_gpt56_terra",
+      "right": "Human_1",
+      "matched_pairs": 352,
+      "identical": true
+    },
+    {
+      "left": "OCR_gpt56_terra",
+      "right": "Human_2",
+      "matched_pairs": 347,
+      "identical": true
+    },
+    {
+      "left": "OCR_gpt_ocr",
+      "right": "Human_1",
+      "matched_pairs": 338,
+      "identical": true
+    },
+    {
+      "left": "OCR_gpt_ocr",
+      "right": "Human_2",
+      "matched_pairs": 335,
+      "identical": true
+    },
+    {
+      "left": "OCR_nemotron",
+      "right": "Human_1",
+      "matched_pairs": 318,
+      "identical": true
+    },
+    {
+      "left": "OCR_nemotron",
+      "right": "Human_2",
+      "matched_pairs": 315,
+      "identical": true
+    },
+    {
+      "left": "OCR_qwen",
+      "right": "Human_1",
+      "matched_pairs": 345,
+      "identical": true
+    },
+    {
+      "left": "OCR_qwen",
+      "right": "Human_2",
+      "matched_pairs": 343,
+      "identical": true
+    }
+  ],
+  "matching_preserved": true,
+  "clinical_values_preserved": true,
+  "agreement_preserved": "Same cards, visits, missingness and normalized value equality for every analysis field; coded suffix excluded from scoring."
+}

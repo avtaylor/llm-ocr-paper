@@ -1,0 +1,166 @@
+{
+  "comparison_count": 20,
+  "comparisons": [
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "gpt41_mini",
+      "reference": "Human_1",
+      "matched_cards": 413,
+      "matched_visits": 3031,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "gpt4o_mini",
+      "reference": "Human_1",
+      "matched_cards": 412,
+      "matched_visits": 1268,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "gpt56_terra",
+      "reference": "Human_1",
+      "matched_cards": 414,
+      "matched_visits": 3071,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "nemotron",
+      "reference": "Human_1",
+      "matched_cards": 403,
+      "matched_visits": 2955,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "qwen",
+      "reference": "Human_1",
+      "matched_cards": 414,
+      "matched_visits": 3051,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "gpt41_mini",
+      "reference": "Human_2",
+      "matched_cards": 403,
+      "matched_visits": 2896,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "gpt4o_mini",
+      "reference": "Human_2",
+      "matched_cards": 403,
+      "matched_visits": 1204,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "gpt56_terra",
+      "reference": "Human_2",
+      "matched_cards": 404,
+      "matched_visits": 2929,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "nemotron",
+      "reference": "Human_2",
+      "matched_cards": 394,
+      "matched_visits": 2797,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "15_ocr_scan_assisted_performance",
+      "model": "qwen",
+      "reference": "Human_2",
+      "matched_cards": 405,
+      "matched_visits": 2926,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "gpt41_mini",
+      "reference": "Human_1",
+      "matched_cards": 396,
+      "matched_visits": 2897,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "gpt41_mini",
+      "reference": "Human_2",
+      "matched_cards": 396,
+      "matched_visits": 2861,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "gpt4o_mini",
+      "reference": "Human_1",
+      "matched_cards": 395,
+      "matched_visits": 1208,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "gpt4o_mini",
+      "reference": "Human_2",
+      "matched_cards": 395,
+      "matched_visits": 1181,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "gpt56_terra",
+      "reference": "Human_1",
+      "matched_cards": 397,
+      "matched_visits": 2935,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "gpt56_terra",
+      "reference": "Human_2",
+      "matched_cards": 397,
+      "matched_visits": 2889,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "nemotron",
+      "reference": "Human_1",
+      "matched_cards": 387,
+      "matched_visits": 2827,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "nemotron",
+      "reference": "Human_2",
+      "matched_cards": 387,
+      "matched_visits": 2754,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "qwen",
+      "reference": "Human_1",
+      "matched_cards": 397,
+      "matched_visits": 2918,
+      "exact_pairs_and_visit_counts_preserved": true
+    },
+    {
+      "report": "16_ocr_shared_human_card_performance",
+      "model": "qwen",
+      "reference": "Human_2",
+      "matched_cards": 397,
+      "matched_visits": 2870,
+      "exact_pairs_and_visit_counts_preserved": true
+    }
+  ],
+  "note": "Established cohorts and matched visits preserved. Field denominators and agreement may differ from historical reports because requested UID and HIV sample ID values were cleared."
+}

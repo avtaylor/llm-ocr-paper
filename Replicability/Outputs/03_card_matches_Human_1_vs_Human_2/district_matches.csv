@@ -1,0 +1,5 @@
+﻿district_code,left_dataset,right_dataset,left_cards,right_cards,matched_pairs,left_unmatched,right_unmatched
+D1,Human_1,Human_2,97,98,97,0,1
+D2,Human_1,Human_2,119,118,116,3,2
+D3,Human_1,Human_2,111,113,109,2,4
+D4,Human_1,Human_2,98,98,88,10,10

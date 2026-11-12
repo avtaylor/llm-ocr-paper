@@ -1,7 +1,4 @@
 """OCR experiment facilities included in comparison with Human 1.
-
-Chilinde was processed but is excluded because Human 1 has no records for it.
-Chitedze was not processed in these batch experiments.
 """
 
 OCR_EXPERIMENT_FACILITIES = [
@@ -15,20 +12,3 @@ FACILITY_DISTRICT_CODES = {
     'F13':'D2', 'F14':'D3', 'F15':'D4', 'F16':'D4',
 }
 
-# Retained for older reports that display original names.
-OCR_EXPERIMENT_FACILITY_NAMES = [
-    'Area18',
-    'Bangwe',
-    'Bwaila',
-    'Limbe',
-    'Makhetha',
-    'Malukula',
-    'Mangochi',
-    'Matawale',
-    'Mbabzi',
-    'Mitundu',
-    'Mlambe',
-    'Mpondasi',
-    'Sadzi',
-    'Zomba',
-]

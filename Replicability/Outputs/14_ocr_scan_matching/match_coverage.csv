@@ -1,0 +1,11 @@
+﻿model,reference,eligible_human_cards,baseline_matches,additional_scan_matches,scan_assisted_matches,remaining_unmatched_human_cards,added_with_different_birth_date
+gpt41_mini,Human_1,425,340,73,413,12,15
+gpt4o_mini,Human_1,425,290,122,412,13,56
+gpt56_terra,Human_1,425,352,62,414,11,11
+nemotron,Human_1,425,318,85,403,22,16
+qwen,Human_1,425,345,69,414,11,8
+gpt41_mini,Human_2,427,333,70,403,24,12
+gpt4o_mini,Human_2,427,289,114,403,24,47
+gpt56_terra,Human_2,427,347,57,404,23,12
+nemotron,Human_2,427,314,80,394,33,14
+qwen,Human_2,427,342,63,405,22,10
