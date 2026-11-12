@@ -1,7 +1,4 @@
 """OCR experiment facilities included in comparison with Human 1.
-
-Chilinde was processed but is excluded because Human 1 has no records for it.
-Chitedze was not processed in these batch experiments.
 """
 
 OCR_EXPERIMENT_FACILITIES = [
